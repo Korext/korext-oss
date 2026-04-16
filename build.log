@@ -1,0 +1,40 @@
+
+> korext-oss@0.1.0 build
+> next build
+
+▲ Next.js 16.2.4 (Turbopack)
+
+  Creating an optimized production build ...
+Error: Cannot apply unknown utility class `font-sans`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+    [2m[at onInvalidCandidate (/Users/tombruno/Downloads/ai-attestation/korext-oss/node_modules/tailwindcss/dist/lib.js:21:1314)][0m
+    [2m[at Ee (/Users/tombruno/Downloads/ai-attestation/korext-oss/node_modules/tailwindcss/dist/lib.js:16:37066)][0m
+    [2m[at /Users/tombruno/Downloads/ai-attestation/korext-oss/node_modules/tailwindcss/dist/lib.js:21:355][0m
+    [2m[at _r (/Users/tombruno/Downloads/ai-attestation/korext-oss/node_modules/tailwindcss/dist/lib.js:3:1733)][0m
+    [2m[at I (/Users/tombruno/Downloads/ai-attestation/korext-oss/node_modules/tailwindcss/dist/lib.js:3:1377)][0m
+    [2m[at Te (/Users/tombruno/Downloads/ai-attestation/korext-oss/node_modules/tailwindcss/dist/lib.js:21:172)][0m
+    [2m[at mn (/Users/tombruno/Downloads/ai-attestation/korext-oss/node_modules/tailwindcss/dist/lib.js:38:294)][0m
+    [2m[at process.processTicksAndRejections (node:internal/process/task_queues:104:5)][0m
+    [2m[at async gn (/Users/tombruno/Downloads/ai-attestation/korext-oss/node_modules/tailwindcss/dist/lib.js:38:631)][0m
+    [2m[at async Xr (/Users/tombruno/Downloads/ai-attestation/korext-oss/node_modules/@tailwindcss/node/dist/index.js:10:3416)][0m
+
+> Build error occurred
+Error: Turbopack build failed with 1 errors:
+./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tombruno/Downloads/ai-attestation/korext-oss/src/app/globals.css:1:1: Cannot apply unknown utility class `font-sans`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive
+    at Input.error (node_modules/postcss/lib/input.js:135:16) [/Users/tombruno/Downloads/ai-attestation/korext-oss/.next/build/chunks/node_modules_13sb.px._.js:4667:22]
+    at error (node_modules/postcss/lib/node.js:146:32) [/Users/tombruno/Downloads/ai-attestation/korext-oss/.next/build/chunks/node_modules_13sb.px._.js:943:38]
+    [at Object.Once (/Users/tombruno/Downloads/ai-attestation/korext-oss/node_modules/@tailwindcss/postcss/dist/index.js:10:6913)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:104:5)]
+    at async LazyResult.runAsync (node_modules/postcss/lib/lazy-result.js:293:11) [/Users/tombruno/Downloads/ai-attestation/korext-oss/.next/build/chunks/node_modules_13sb.px._.js:6230:21]
+    at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34) [/Users/tombruno/Downloads/ai-attestation/korext-oss/.next/build/chunks/[root-of-the-server]__0d-m0h0._.js:146:36]
+    at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23) [/Users/tombruno/Downloads/ai-attestation/korext-oss/.next/build/chunks/[root-of-the-server]__0ubbtyl._.js:443:31]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.jsx [Server Component]
+
+
+    at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34) [/Users/tombruno/Downloads/ai-attestation/korext-oss/.next/build/chunks/[root-of-the-server]__0d-m0h0._.js:146:36])
+    at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23) [/Users/tombruno/Downloads/ai-attestation/korext-oss/.next/build/chunks/[root-of-the-server]__0ubbtyl._.js:443:31])

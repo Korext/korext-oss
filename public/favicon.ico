@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Korext | Governance Copilot for AI-Assisted Coding</title><meta name="description" content="Governance Copilot for AI-Assisted Coding. Korext enforces your architecture rules during AI code generation, blocks non-compliant PRs, and exports tamper-proof proof bundles for every change."/><meta name="keywords" content="AI code governance, AI-assisted development, code modernization, proof bundles, deterministic policy enforcement, parity testing, enterprise AI governance, AI code review, inference gap, modern native standards, AI code quality, code compliance, AI security"/><meta name="author" content="Korext"/><meta name="theme-color" content="#0a0a0f"/><meta name="color-scheme" content="dark"/><meta name="mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/><meta name="apple-mobile-web-app-title" content="Korext"/><meta name="application-name" content="Korext"/><meta name="msapplication-TileColor" content="#0a0a0f"/><meta property="og:type" content="website"/><meta property="og:url" content="https://www.korext.com/"/><meta property="og:title" content="Korext | Governance Copilot for AI-Assisted Coding"/><meta property="og:description" content="AI Coding Tools don&#x27;t know your architecture rules. Korext enforces them, then proves every change met your standards with tamper-proof evidence."/><meta property="og:image" content="https://ucarecdn.com/0cc0c633-a6ae-4e41-90c0-c61a323994d7/-/format/auto/"/><meta property="og:image:secure_url" content="https://ucarecdn.com/0cc0c633-a6ae-4e41-90c0-c61a323994d7/-/format/auto/"/><meta property="og:image:type" content="image/png"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image:alt" content="Korext - Deterministic Governance for AI-Assisted Code"/><meta property="og:site_name" content="Korext"/><meta property="og:locale" content="en_US"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@korext"/><meta name="twitter:creator" content="@korext"/><meta name="twitter:url" content="https://www.korext.com/"/><meta name="twitter:title" content="Korext | Governance Copilot for AI-Assisted Coding"/><meta name="twitter:description" content="AI tools don&#x27;t know your architecture rules. Korext enforces them during generation and proves compliance with cryptographic proof bundles."/><meta name="twitter:image" content="https://ucarecdn.com/0cc0c633-a6ae-4e41-90c0-c61a323994d7/-/format/auto/"/><meta name="twitter:image:alt" content="Korext - Governance Copilot for AI-Assisted Coding"/><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/><meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/><meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/><link rel="stylesheet" href="/assets/root-DVUurNPZ.css"/><link rel="preload" href="https://fonts.googleapis.com" as="style"/><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="preconnect" href="https://ucarecdn.com" crossorigin="anonymous"/><link rel="preconnect" href="https://app.korext.com" crossorigin="anonymous"/><link rel="dns-prefetch" href="https://ucarecdn.com"/><link rel="dns-prefetch" href="https://fonts.googleapis.com"/><link rel="dns-prefetch" href="https://fonts.gstatic.com"/><link rel="dns-prefetch" href="https://app.korext.com"/><link rel="canonical" href="https://www.korext.com/"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Korext","url":"https://www.korext.com","logo":"https://ucarecdn.com/9849d2c9-5e79-43aa-be48-ada8c92cc26b/-/format/auto/","description":"Governance Copilot for AI-Assisted Coding. Enforce architecture rules during AI code generation, require parity evidence before merge, and export tamper-proof proof bundles for every gated change.","foundingDate":"2024","sameAs":["https://twitter.com/korext","https://linkedin.com/company/korext","https://github.com/korext","https://www.youtube.com/@Korext-ai"],"contactPoint":{"@type":"ContactPoint","contactType":"Sales","email":"sales@korext.com"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Korext","applicationCategory":"DeveloperApplication","operatingSystem":"Web, GitHub, IDE","offers":{"@type":"AggregateOffer","lowPrice":"0","highPrice":"20","priceCurrency":"USD"},"description":"Governance Copilot for AI-Assisted Coding. Enforce architecture standards during AI code generation and export audit-ready proof bundles for every change.","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","ratingCount":"100"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does Korext handle AI-generated code?","acceptedAnswer":{"@type":"Answer","text":"Korext applies deterministic policy during AI-assisted development so invalid patterns don't enter the diff. For modernization or refactors, it requires parity evidence (tests, benchmarks, security checks) before merge. Every allowed change exports a proof bundle tying decision to policy version to evidence to exceptions to approvals."}},{"@type":"Question","name":"What happens to my code and data?","acceptedAnswer":{"@type":"Answer","text":"Code and metadata flow through Korext's evaluation engine to produce policy decisions and proof bundles. You control retention policies, and Enterprise customers can deploy Korext in their own infrastructure (customer-managed mode) for maximum control."}},{"@type":"Question","name":"Can I customize policies for AI-assisted modernization?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can start with our pre-built policy packs (security, modernization, compliance) and customize them with team-specific overlays. Enterprise customers get full custom policy authoring and dedicated support for complex AI governance scenarios and modernization programs."}}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.korext.com/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Korext | Governance Copilot for AI-Assisted Coding","description":"Enforce architecture rules during AI code generation, require parity evidence before merge, and export proof bundles for every AI-assisted change.","url":"https://www.korext.com/","inLanguage":"en-US","isPartOf":{"@type":"WebSite","name":"Korext","url":"https://www.korext.com"}}</script><link rel="icon" type="image/png" sizes="32x32" href="/favicon.png"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=block"/></head><body><a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[9999] focus:bg-white focus:text-black focus:px-4 focus:py-2 focus:rounded focus:text-sm focus:font-medium">Skip to main content</a><main id="main-content"></main><section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section><script>((storageKey2, restoreKey) => {
+    if (!window.history.state || !window.history.state.key) {
+      let key = Math.random().toString(32).slice(2);
+      window.history.replaceState({ key }, "");
+    }
+    try {
+      let positions = JSON.parse(sessionStorage.getItem(storageKey2) || "{}");
+      let storedY = positions[restoreKey || window.history.state.key];
+      if (typeof storedY === "number") {
+        window.scrollTo(0, storedY);
+      }
+    } catch (error) {
+      console.error(error);
+      sessionStorage.removeItem(storageKey2);
+    }
+  })("react-router-scroll-positions", null)</script><link rel="modulepreload" href="/assets/entry.client-jWwEc9n1.js"/><link rel="modulepreload" href="/assets/chunk-LFPYN7LY-DZPiMu2W.js"/><link rel="modulepreload" href="/assets/index-B1nLg6NB.js"/><link rel="modulepreload" href="/assets/root-DYwgyYOT.js"/><link rel="modulepreload" href="/assets/index-BBR7LY95.js"/><link rel="modulepreload" href="/assets/not-found-DTwXv5TJ.js"/><link rel="modulepreload" href="/assets/shield-wo5Xhuxw.js"/><link rel="modulepreload" href="/assets/arrow-left-DoAG3D25.js"/><link rel="modulepreload" href="/assets/terminal--f-SRymC.js"/><script>window.__reactRouterContext = {"basename":"/","future":{"unstable_optimizeDeps":false,"unstable_subResourceIntegrity":false,"unstable_trailingSlashAwareDataRequests":false,"unstable_previewServerPrerendering":false,"v8_middleware":false,"v8_splitRouteModules":false,"v8_viteEnvironmentApi":false},"routeDiscovery":{"mode":"lazy","manifestPath":"/__manifest"},"ssr":true,"isSpaMode":false};window.__reactRouterContext.stream = new ReadableStream({start(controller){window.__reactRouterContext.streamController = controller;}}).pipeThrough(new TextEncoderStream());</script><script type="module" async="">;
+import * as route0 from "/assets/root-DYwgyYOT.js";
+import * as route1 from "/assets/not-found-DTwXv5TJ.js";
+  window.__reactRouterManifest = {
+  "entry": {
+    "module": "/assets/entry.client-jWwEc9n1.js",
+    "imports": [
+      "/assets/chunk-LFPYN7LY-DZPiMu2W.js",
+      "/assets/index-B1nLg6NB.js"
+    ],
+    "css": []
+  },
+  "routes": {
+    "root": {
+      "id": "root",
+      "path": "",
+      "hasAction": false,
+      "hasLoader": false,
+      "hasClientAction": false,
+      "hasClientLoader": false,
+      "hasClientMiddleware": false,
+      "hasDefaultExport": true,
+      "hasErrorBoundary": false,
+      "module": "/assets/root-DYwgyYOT.js",
+      "imports": [
+        "/assets/chunk-LFPYN7LY-DZPiMu2W.js",
+        "/assets/index-B1nLg6NB.js",
+        "/assets/index-BBR7LY95.js"
+      ],
+      "css": [
+        "/assets/root-DVUurNPZ.css"
+      ]
+    },
+    "not-found": {
+      "id": "not-found",
+      "parentId": "root",
+      "path": "*?",
+      "hasAction": false,
+      "hasLoader": true,
+      "hasClientAction": false,
+      "hasClientLoader": false,
+      "hasClientMiddleware": false,
+      "hasDefaultExport": true,
+      "hasErrorBoundary": false,
+      "module": "/assets/not-found-DTwXv5TJ.js",
+      "imports": [
+        "/assets/index-BBR7LY95.js",
+        "/assets/chunk-LFPYN7LY-DZPiMu2W.js",
+        "/assets/shield-wo5Xhuxw.js",
+        "/assets/arrow-left-DoAG3D25.js",
+        "/assets/terminal--f-SRymC.js"
+      ],
+      "css": []
+    },
+    "page": {
+      "id": "page",
+      "parentId": "root",
+      "index": true,
+      "hasAction": false,
+      "hasLoader": false,
+      "hasClientAction": false,
+      "hasClientLoader": false,
+      "hasClientMiddleware": false,
+      "hasDefaultExport": true,
+      "hasErrorBoundary": false,
+      "module": "/assets/page-DKLZX91_.js",
+      "imports": [
+        "/assets/index-BBR7LY95.js",
+        "/assets/chunk-LFPYN7LY-DZPiMu2W.js",
+        "/assets/GlobalBackground-BeTgpBjf.js",
+        "/assets/sparkles-BELSBm76.js",
+        "/assets/shield-wo5Xhuxw.js",
+        "/assets/x-DcyeDQpo.js",
+        "/assets/terminal--f-SRymC.js",
+        "/assets/check-Dmwr4cMe.js",
+        "/assets/file-text-JLwvzyLE.js",
+        "/assets/circle-x-BGpUTL-b.js",
+        "/assets/settings-B8GnibZZ.js",
+        "/assets/git-branch-BLwLdhoU.js",
+        "/assets/chevron-down-Cz2ykA8-.js",
+        "/assets/triangle-alert-MtcCfiOc.js",
+        "/assets/play-qY2Ut7US.js",
+        "/assets/PilotModal-BjXBh1N3.js",
+        "/assets/clock-BjXkhx5w.js",
+        "/assets/eye-Bj9lJ-iF.js",
+        "/assets/server-CPaMgO78.js",
+        "/assets/EmailCapture-CA6tuKtk.js"
+      ],
+      "css": []
+    }
+  },
+  "url": "/assets/manifest-d1d6cde8.js",
+  "version": "d1d6cde8"
+};
+  window.__reactRouterRouteModules = {"root":route0,"not-found":route1};
+
+import("/assets/entry.client-jWwEc9n1.js");</script><script src="https://kit.fontawesome.com/2c15cc0cc7.js" crossorigin="anonymous" async=""></script></body></html><!--$--><script>window.__reactRouterContext.streamController.enqueue("[{\"_1\":2,\"_5\":-5,\"_6\":-5},\"loaderData\",{\"_3\":4},\"not-found\",\"\",\"actionData\",\"errors\"]\n");</script><!--$--><script>window.__reactRouterContext.streamController.close();</script><!--/$--><!--/$-->

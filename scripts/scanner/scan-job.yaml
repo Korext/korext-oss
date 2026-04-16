@@ -1,0 +1,11 @@
+apiVersion: run.googleapis.com/v1
+kind: Job
+metadata:
+  name: korext-oss-scanner
+spec:
+  template:
+    spec:
+      template:
+        spec:
+          containers:
+          - image: korext/oss-scanner:latest
