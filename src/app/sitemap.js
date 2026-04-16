@@ -11,5 +11,8 @@ export default function sitemap() {
     { url: `${base}/incidents`, lastModified: now, priority: 0.9, changeFrequency: 'daily' },
     { url: `${base}/incidents/browse`, lastModified: now, priority: 0.8, changeFrequency: 'daily' },
     { url: `${base}/incidents/submit`, lastModified: now, priority: 0.7, changeFrequency: 'monthly' },
+    { url: `${base}/regressions`, lastModified: now, priority: 0.9, changeFrequency: 'daily' },
+    { url: `${base}/regressions/browse`, lastModified: now, priority: 0.8, changeFrequency: 'daily' },
+    { url: `${base}/regressions/submit`, lastModified: now, priority: 0.7, changeFrequency: 'monthly' },
   ];
 }

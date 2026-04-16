@@ -9,6 +9,7 @@ const navItems = [
   { href: '/ai-license', label: 'AI License' },
   { href: '/supply-chain', label: 'Supply Chain' },
   { href: '/incidents', label: 'Incidents' },
+  { href: '/regressions', label: 'Regressions' },
 ];
 
 export default function Header() {

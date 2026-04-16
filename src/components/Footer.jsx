@@ -6,6 +6,7 @@ const projects = [
   { href: '/ai-license', label: 'AI License' },
   { href: '/supply-chain', label: 'Supply Chain' },
   { href: '/incidents', label: 'Incidents' },
+  { href: '/regressions', label: 'Regression DB' },
 ];
 
 const resources = [
@@ -17,6 +18,8 @@ const resources = [
   { href: 'https://www.npmjs.com/package/@korext/ai-license', label: 'npm: ai-license', external: true },
   { href: 'https://www.npmjs.com/package/@korext/supply-check', label: 'npm: supply-check', external: true },
   { href: 'https://www.npmjs.com/package/@korext/incident-report', label: 'npm: incident-report', external: true },
+  { href: 'https://github.com/korext/ai-regression-database', label: 'GitHub: AI Regressions', external: true },
+  { href: 'https://www.npmjs.com/package/@korext/regression-submit', label: 'npm: regression-submit', external: true },
 ];
 
 const company = [

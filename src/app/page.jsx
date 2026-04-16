@@ -90,6 +90,26 @@ const projects = [
     ),
     features: ['AICI identifiers', 'Detection rule mapping', 'RSS/Atom feeds', 'Anonymous reporting'],
   },
+  {
+    slug: 'regressions',
+    name: 'AI Regression Database',
+    tagline: 'Catalog code patterns AI tools continually generate incorrectly',
+    description: 'The public corpus of code patterns that AI tools consistently generate incorrectly. Scan your repo, track patterns over time, test reproduction rates automatically.',
+    install: 'npx @korext/regression-submit draft',
+    href: '/regressions',
+    github: 'https://github.com/korext/ai-regression-database',
+    npm: 'https://www.npmjs.com/package/@korext/regression-submit',
+    specLicense: 'CC0 1.0',
+    codeLicense: 'Apache 2.0',
+    version: '1.0.2',
+    color: 'purple',
+    icon: (
+      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m3.75 9v6m3-3H9m1.5-12H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+      </svg>
+    ),
+    features: ['Automated test harness', 'Version awareness tracking', 'API detection', 'GitHub Action'],
+  },
 ];
 
 const colorMap = {
@@ -124,6 +144,14 @@ const colorMap = {
     badge: 'bg-red-500/10 text-red-400 border-red-500/20',
     installBg: 'bg-red-500/5 border-red-500/10',
     dot: 'bg-red-400',
+  },
+  purple: {
+    border: 'border-purple-500/20 hover:border-purple-400/40',
+    glow: 'hover:shadow-[0_0_60px_rgba(168,85,247,0.08)]',
+    iconBg: 'bg-purple-500/10 text-purple-400',
+    badge: 'bg-purple-500/10 text-purple-400 border-purple-500/20',
+    installBg: 'bg-purple-500/5 border-purple-500/10',
+    dot: 'bg-purple-400',
   },
 };
 
@@ -278,10 +306,10 @@ export default function Home() {
         <div className="container mx-auto px-6 max-w-5xl text-center space-y-10">
           <div className="space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold text-white">How they work together</h2>
-            <p className="text-white/40 max-w-xl mx-auto">Four standards. One ecosystem. Complete AI code transparency.</p>
+            <p className="text-white/40 max-w-xl mx-auto">Five standards. One ecosystem. Complete AI code transparency.</p>
           </div>
 
-          <div className="grid md:grid-cols-5 gap-px bg-white/[0.04] rounded-2xl overflow-hidden">
+          <div className="grid md:grid-cols-6 gap-px bg-white/[0.04] rounded-2xl overflow-hidden">
             <div className="bg-[#0d0e1a] p-8 space-y-3">
               <div className="text-4xl font-bold text-blue-400/60">1</div>
               <h3 className="text-lg font-semibold text-white">Track</h3>
@@ -303,7 +331,12 @@ export default function Home() {
               <p className="text-sm text-white/40 leading-relaxed">AI Incident Registry documents what happens when AI code fails. Browse incidents, subscribe to feeds, prevent repeats.</p>
             </div>
             <div className="bg-[#0d0e1a] p-8 space-y-3">
-              <div className="text-4xl font-bold text-white/20">5</div>
+              <div className="text-4xl font-bold text-purple-400/60">5</div>
+              <h3 className="text-lg font-semibold text-white">Prevent</h3>
+              <p className="text-sm text-white/40 leading-relaxed">AI Regression Database catalogs repeatable patterns AI tools get wrong proactively before they become incidents.</p>
+            </div>
+            <div className="bg-[#0d0e1a] p-8 space-y-3">
+              <div className="text-4xl font-bold text-white/20">6</div>
               <h3 className="text-lg font-semibold text-white">Govern</h3>
               <p className="text-sm text-white/40 leading-relaxed">Connect Korext for governance scanning, policy enforcement, and cryptographic proof bundles.</p>
             </div>
