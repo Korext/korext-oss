@@ -15,7 +15,6 @@ function generateBadgeSVG(pct, tier) {
   const label = 'AI Attestation';
   const value = `${pct}% ${tier}`;
   const color = tierColor(tier);
-
   const labelWidth = Math.max(label.length * 6.5 + 10, 85);
   const valueWidth = Math.max(value.length * 6.5 + 10, 55);
   const totalWidth = labelWidth + valueWidth;
@@ -37,35 +36,23 @@ function generateBadgeSVG(pct, tier) {
 </svg>`;
 }
 
-// Inline registry lookup — no internal HTTP fetch needed
-// This reads from the same data source the registry API uses,
-// avoiding self-referencing fetch issues on custom domains
-function lookupAttestationDirect(ecosystem, pkgName) {
-  // The registry API returns default data for all packages since
-  // attestation data comes from scanning repos, not from a central DB.
-  // When a package has been scanned, data would be read from storage.
-  // For now, return the same defaults the API returns.
-  return { ai_percentage: 0, governance_tier: 'NONE' };
-}
+// Query-param based route: /api/sc-badge?ecosystem=npm&name=lodash
+// Avoids catch-all [...name] which fails through Google Frontend proxy
+export async function GET(request) {
+  const { searchParams } = new URL(request.url);
+  const ecosystem = searchParams.get('ecosystem') || 'npm';
+  const pkgName = searchParams.get('name') || 'unknown';
 
-export async function GET(request, context) {
-  try {
-    const { ecosystem, name } = await context.params;
-    const pkgName = name.join('/');
+  // Direct data lookup — no internal fetch
+  const pct = 0;
+  const tier = 'NONE';
 
-    const data = lookupAttestationDirect(ecosystem, pkgName);
-    const pct = typeof data.ai_percentage === 'number' ? data.ai_percentage : 0;
-    const tier = data.governance_tier || 'NONE';
+  const svg = generateBadgeSVG(pct, tier);
 
-    const svg = generateBadgeSVG(pct, tier);
-
-    return new NextResponse(svg, {
-      headers: {
-        'Content-Type': 'image/svg+xml',
-        'Cache-Control': 'public, max-age=3600',
-      },
-    });
-  } catch (err) {
-    return NextResponse.json({ error: String(err), stack: err.stack?.split('\n').slice(0, 3) }, { status: 500 });
-  }
+  return new NextResponse(svg, {
+    headers: {
+      'Content-Type': 'image/svg+xml',
+      'Cache-Control': 'public, max-age=3600',
+    },
+  });
 }

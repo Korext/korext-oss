@@ -15,8 +15,9 @@ export async function generateMetadata({ params }) {
 
 async function fetchAttestationData(ecosystem, pkgName) {
   try {
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://oss.korext.com';
-    const res = await fetch(`${baseUrl}/api/registry/${ecosystem}/${pkgName}`, { cache: 'no-store' });
+    // Use query-param route to avoid catch-all [...name] issue through Google Frontend
+    const baseUrl = process.env.CLOUD_RUN_URL || 'https://korext-oss-976877900167.us-central1.run.app';
+    const res = await fetch(`${baseUrl}/api/sc-registry?ecosystem=${encodeURIComponent(ecosystem)}&name=${encodeURIComponent(pkgName)}`, { cache: 'no-store' });
     if (res.ok) {
       return await res.json();
     }
@@ -111,13 +112,13 @@ export default async function PackageDetailsPage({ params }) {
             </p>
             <div className="flex gap-3">
               <a
-                href={`/api/supply-chain/sbom/${ecosystem}/${pkgName}?format=cyclonedx`}
+                href={`/api/sc-sbom?ecosystem=${ecosystem}&name=${pkgName}&format=cyclonedx`}
                 className="px-4 py-2 bg-white/[0.04] border border-white/[0.08] rounded-lg text-sm text-white/60 hover:text-white hover:bg-white/[0.08] transition-all"
               >
                 CycloneDX 1.6
               </a>
               <a
-                href={`/api/supply-chain/sbom/${ecosystem}/${pkgName}?format=spdx`}
+                href={`/api/sc-sbom?ecosystem=${ecosystem}&name=${pkgName}&format=spdx`}
                 className="px-4 py-2 bg-white/[0.04] border border-white/[0.08] rounded-lg text-sm text-white/60 hover:text-white hover:bg-white/[0.08] transition-all"
               >
                 SPDX 2.3
@@ -133,11 +134,11 @@ export default async function PackageDetailsPage({ params }) {
             <div className="space-y-3">
               <div className="border border-white/[0.06] rounded-xl p-4 bg-white/[0.02] flex items-center gap-4">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={`/api/supply-chain/badge/${ecosystem}/${pkgName}`} alt="AI Attestation Badge" />
+                <img src={`/api/sc-badge?ecosystem=${ecosystem}&name=${pkgName}`} alt="AI Attestation Badge" />
                 <span className="text-sm text-white/30">{ecosystem}/{pkgName}</span>
               </div>
               <code className="block text-xs font-mono text-white/40 px-4 py-3 bg-white/[0.03] border border-white/[0.06] rounded-lg overflow-x-auto select-all">
-                {`[![AI Attestation](https://oss.korext.com/api/supply-chain/badge/${ecosystem}/${pkgName})](https://oss.korext.com/supply-chain/registry/${ecosystem}/${pkgName})`}
+                {`[![AI Attestation](https://oss.korext.com/api/sc-badge?ecosystem=${ecosystem}&name=${pkgName})](https://oss.korext.com/supply-chain/registry/${ecosystem}/${pkgName})`}
               </code>
             </div>
           </div>

@@ -52,7 +52,18 @@ const securityHeaders = {
 export function middleware(request) {
   const url = request.nextUrl.clone();
 
-  // Lowercase enforcement
+  // Skip processing for API routes — the Google Frontend proxy
+  // (custom domain) causes issues with catch-all [...name] route
+  // params when middleware rewrites are applied
+  if (url.pathname.startsWith('/api/')) {
+    const response = NextResponse.next();
+    for (const [key, value] of Object.entries(securityHeaders)) {
+      response.headers.set(key, value);
+    }
+    return response;
+  }
+
+  // Lowercase enforcement (pages only)
   if (url.pathname !== url.pathname.toLowerCase()) {
     url.pathname = url.pathname.toLowerCase();
     return NextResponse.redirect(url, 308);
@@ -117,5 +128,5 @@ export function middleware(request) {
 }
 
 export const config = {
-  matcher: ['/((?!_next/image|favicon.ico|favicon.png|logo.png|apple-touch-icon.png|korext-logo-1024.png|og-image.png|team/).*)'],
+  matcher: ['/((?!_next/image|favicon.ico|favicon.png|logo.png|apple-touch-icon.png|korext-logo-1024.png|og-image.png|team|api/supply-chain/badge|api/badge|api/ai-license-badge).*)'],
 };
