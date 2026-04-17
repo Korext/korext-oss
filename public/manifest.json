@@ -1,0 +1,25 @@
+{
+  "name": "Korext Open Source",
+  "short_name": "Korext OSS",
+  "description": "Open standards and tools for AI code transparency. Track AI-generated code, declare provenance, scan your supply chain.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d0e1a",
+  "theme_color": "#0d0e1a",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/korext-logo-1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["developer-tools", "productivity"],
+  "lang": "en",
+  "dir": "ltr"
+}

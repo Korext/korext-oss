@@ -5,10 +5,18 @@ export function organizationSchema() {
     name: 'Korext',
     url: 'https://korext.com',
     logo: 'https://oss.korext.com/korext-logo-1024.png',
+    foundingDate: '2024',
     sameAs: [
       'https://github.com/korext',
-      'https://www.npmjs.com/~korext'
-    ]
+      'https://www.npmjs.com/~korext',
+      'https://www.linkedin.com/company/korext',
+      'https://x.com/korext'
+    ],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'technical support',
+      url: 'https://github.com/korext'
+    }
   };
 }
 
@@ -24,6 +32,14 @@ export function webSiteSchema() {
       name: 'Korext',
       url: 'https://korext.com',
     },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: 'https://oss.korext.com/supply-chain/registry?q={search_term_string}'
+      },
+      'query-input': 'required name=search_term_string'
+    }
   };
 }
 

@@ -15,6 +15,7 @@ export const metadata = {
     icon: [{ url: '/favicon.png', type: 'image/png' }],
     apple: '/apple-touch-icon.png',
   },
+  manifest: '/manifest.json',
   openGraph: {
     siteName: 'Korext Open Source',
     locale: 'en_US',
@@ -24,6 +25,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     site: '@korext',
+    creator: '@korext',
     images: ['/og-image.png'],
   },
   robots: {
@@ -36,6 +38,11 @@ export const metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
+  },
+  other: {
+    'theme-color': '#0d0e1a',
+    'color-scheme': 'dark',
+    'msapplication-TileColor': '#0d0e1a',
   },
 };
 

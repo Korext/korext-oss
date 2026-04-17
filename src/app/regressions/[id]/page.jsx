@@ -1,4 +1,15 @@
 import Link from 'next/link';
+import { buildMetadata } from '@/lib/seo';
+
+export async function generateMetadata({ params }) {
+  const { id } = await params;
+  return buildMetadata({
+    title: `Pattern ${id} | AI Regression Database`,
+    description: `Details for AI regression pattern ${id}. View severity, affected tools, code examples, and detection rules.`,
+    path: `/regressions/${id}`,
+    tags: ['AI regression', 'code pattern', id, 'detection'],
+  });
+}
 
 async function fetchPattern(id) {
   try {
