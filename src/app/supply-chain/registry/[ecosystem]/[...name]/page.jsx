@@ -16,7 +16,7 @@ export async function generateMetadata({ params }) {
 async function fetchAttestationData(ecosystem, pkgName) {
   try {
     // Use query-param route to avoid catch-all [...name] issue through Google Frontend
-    const baseUrl = process.env.CLOUD_RUN_URL || 'https://korext-oss-976877900167.us-central1.run.app';
+    const baseUrl = process.env.CLOUD_RUN_URL || 'https://korext-oss-uhozgvpbrq-uc.a.run.app';
     const res = await fetch(`${baseUrl}/api/sc-registry?ecosystem=${encodeURIComponent(ecosystem)}&name=${encodeURIComponent(pkgName)}`, { cache: 'no-store' });
     if (res.ok) {
       return await res.json();

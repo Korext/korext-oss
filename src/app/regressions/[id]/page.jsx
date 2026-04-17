@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 async function fetchPattern(id) {
   try {
-    const baseUrl = process.env.CLOUD_RUN_URL || 'https://korext-oss-976877900167.us-central1.run.app';
+    const baseUrl = process.env.CLOUD_RUN_URL || 'https://korext-oss-uhozgvpbrq-uc.a.run.app';
     const res = await fetch(`${baseUrl}/api/regressions/${id}`, { cache: 'no-store' });
     if (res.ok) {
       return await res.json();
