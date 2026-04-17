@@ -1,8 +1,20 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
 
-const SUBS_DIR = path.join(process.cwd(), '.incident-data', 'subscriptions');
+const BUCKET = 'korext-oss-submissions';
+
+async function getAccessToken() {
+  try {
+    const res = await fetch(
+      'http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/token',
+      { headers: { 'Metadata-Flavor': 'Google' }, signal: AbortSignal.timeout(2000) }
+    );
+    if (!res.ok) return null;
+    const { access_token } = await res.json();
+    return access_token;
+  } catch {
+    return null;
+  }
+}
 
 export async function POST(request) {
   try {
@@ -17,11 +29,6 @@ export async function POST(request) {
       return NextResponse.json({ error: 'Invalid email format' }, { status: 400 });
     }
 
-    // Store subscription to filesystem
-    if (!fs.existsSync(SUBS_DIR)) {
-      fs.mkdirSync(SUBS_DIR, { recursive: true });
-    }
-
     const subId = `sub-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
     const subscription = {
       id: subId,
@@ -31,10 +38,31 @@ export async function POST(request) {
       status: 'active',
     };
 
-    fs.writeFileSync(
-      path.join(SUBS_DIR, `${subId}.json`),
-      JSON.stringify(subscription, null, 2)
-    );
+    const objectName = `subscriptions/${subId}.json`;
+    const jsonString = JSON.stringify(subscription, null, 2);
+
+    // Persist to GCS (durable across container restarts)
+    const token = await getAccessToken();
+    if (token) {
+      const uploadUrl = `https://storage.googleapis.com/upload/storage/v1/b/${BUCKET}/o?uploadType=media&name=${encodeURIComponent(objectName)}`;
+      const res = await fetch(uploadUrl, {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json',
+        },
+        body: jsonString,
+      });
+
+      if (!res.ok) {
+        const err = await res.text();
+        console.error(`[subscribe] GCS upload failed: ${err}`);
+      } else {
+        console.log(`[subscribe] Saved ${objectName} to gs://${BUCKET}/`);
+      }
+    } else {
+      console.log(`[subscribe] DEV MODE - Would save ${objectName}:`, jsonString.substring(0, 200));
+    }
 
     return NextResponse.json({
       success: true,
