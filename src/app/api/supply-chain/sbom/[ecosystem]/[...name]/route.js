@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
-export async function GET(request, { params }) {
-  const { ecosystem, name } = params;
+export async function GET(request, context) {
+  const { ecosystem, name } = await context.params;
   const pkgName = name.join('/');
   const { searchParams } = new URL(request.url);
   const format = searchParams.get('format') || 'cyclonedx';

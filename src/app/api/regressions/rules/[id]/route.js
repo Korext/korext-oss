@@ -1,8 +1,8 @@
 import { NextResponse } from 'next/server';
 import { getAllRegressionPatterns } from '@/lib/regression-storage';
 
-export async function GET(request, { params }) {
-  const { id } = params;
+export async function GET(request, context) {
+  const { id } = await context.params;
   const patterns = await getAllRegressionPatterns();
   
   const matches = patterns.filter(p => 

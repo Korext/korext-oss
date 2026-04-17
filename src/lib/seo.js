@@ -4,6 +4,7 @@
 
 const SITE_NAME = 'Korext Open Source';
 const SITE_URL = 'https://oss.korext.com';
+const OG_IMAGE = `${SITE_URL}/og-image.png`;
 
 export function buildMetadata({
   title,
@@ -16,7 +17,7 @@ export function buildMetadata({
   tags = []
 }) {
   const canonical = `${SITE_URL}${path}`;
-  const ogImage = image || `${SITE_URL}/logo.png`;
+  const ogImage = image || OG_IMAGE;
 
   return {
     title: `${title} | ${SITE_NAME}`,
@@ -29,7 +30,7 @@ export function buildMetadata({
       description,
       url: canonical,
       siteName: SITE_NAME,
-      images: [{ url: ogImage, width: 1200, height: 630 }],
+      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
       locale: 'en_US',
       type,
       ...(publishedTime && { publishedTime }),
@@ -39,7 +40,8 @@ export function buildMetadata({
       card: 'summary_large_image',
       title,
       description,
-      images: [ogImage]
+      images: [ogImage],
+      site: '@korext',
     },
     keywords: tags.join(', '),
     robots: {
@@ -53,6 +55,26 @@ export function buildMetadata({
         'max-snippet': -1
       }
     }
+  };
+}
+
+/**
+ * Generate BreadcrumbList JSON-LD for subpages.
+ * Used by schema.js to emit structured data per page.
+ *
+ * @param {Array<{name: string, href: string}>} items - Breadcrumb trail
+ * @returns {object} BreadcrumbList schema.org object
+ */
+export function buildBreadcrumbs(items) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: item.name,
+      item: `${SITE_URL}${item.href}`,
+    })),
   };
 }
 

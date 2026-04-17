@@ -1,9 +1,12 @@
 import Link from 'next/link';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata = {
-  title: 'AI Regression Database | Korext Open Source',
-  description: 'The public corpus of code patterns that AI coding tools consistently generate incorrectly. Scan your repo, track patterns over time, test reproduction rates automatically.'
-};
+export const metadata = buildMetadata({
+  title: 'AI Regression Database',
+  description: 'The public corpus of code patterns that AI coding tools consistently generate incorrectly. Scan your repo, track patterns over time, test reproduction rates automatically.',
+  path: '/regressions',
+  tags: ['AI regression database', 'AI code bugs', 'AI tool failures', 'code pattern errors'],
+});
 
 const categoryLinks = ['security', 'correctness', 'performance', 'hallucination', 'compliance', 'maintainability'];
 const severityLinks = ['critical', 'high', 'medium', 'low', 'informational'];
@@ -11,7 +14,7 @@ const languageLinks = ['JavaScript', 'TypeScript', 'Python', 'Java', 'Go', 'Rust
 const toolLinks = [
   'GitHub Copilot', 'Cursor', 'Claude Code', 'Windsurf', 'Codeium',
   'Aider', 'Devin', 'OpenHands', 'Tabnine', 'Amazon Q',
-  'Codex CLI', 'Google Code Assist', 'JetBrains AI', 'Sourcegraph Cody',
+  'Codex CLI', 'Gemini Code Assist', 'JetBrains AI', 'Sourcegraph Cody',
   'Replit AI', 'Cline', 'Continue', 'Sweep', 'GPT Engineer', 'Lovable',
   'Bolt', 'v0'
 ];
@@ -21,8 +24,8 @@ export default function RegressionsLanding() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="container mx-auto px-6 relative z-10 text-center max-w-4xl">
+      <section className="relative pt-24 sm:pt-32 pb-16 sm:pb-20 overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10 text-center max-w-4xl">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-purple-500/10 text-purple-400 text-sm font-medium mb-8 border border-purple-500/20">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
@@ -30,17 +33,17 @@ export default function RegressionsLanding() {
             </span>
             Database Live
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-white mb-4 sm:mb-6 tracking-tight">
             AI Regression <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">Database</span>
           </h1>
-          <p className="text-xl text-white/60 mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-xl text-white/60 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed">
             The public corpus of patterns that AI coding tools consistently generate incorrectly. Not an academic benchmark, but real-world developer pitfalls.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link href="/regressions/submit" className="px-8 py-4 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-semibold transition-all shadow-lg shadow-purple-500/10 border border-purple-500/40">
+            <Link href="/regressions/submit" className="px-6 sm:px-8 py-3 sm:py-4 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-semibold transition-all shadow-lg shadow-purple-500/10 border border-purple-500/40 text-sm sm:text-base">
               Document a Pattern
             </Link>
-            <Link href="/regressions/browse" className="px-8 py-4 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] text-white font-semibold transition-all border border-white/[0.06]">
+            <Link href="/regressions/browse" className="px-6 sm:px-8 py-3 sm:py-4 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] text-white font-semibold transition-all border border-white/[0.06] text-sm sm:text-base">
               Browse Database
             </Link>
           </div>
@@ -49,18 +52,18 @@ export default function RegressionsLanding() {
 
       {/* Stats Bar */}
       <section className="border-y border-white/[0.06] bg-white/[0.01]">
-        <div className="container mx-auto px-6 py-8">
-          <div className="grid grid-cols-3 gap-8 text-center">
+        <div className="container mx-auto px-4 sm:px-6 py-6 sm:py-8">
+          <div className="grid grid-cols-3 gap-4 sm:gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-white">0</div>
+              <div className="text-2xl sm:text-3xl font-bold text-white">0</div>
               <div className="text-sm text-white/40 mt-1">patterns documented</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-white">22</div>
+              <div className="text-2xl sm:text-3xl font-bold text-white">22</div>
               <div className="text-sm text-white/40 mt-1">AI tools tracked</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-white">0</div>
+              <div className="text-2xl sm:text-3xl font-bold text-white">0</div>
               <div className="text-sm text-white/40 mt-1">vendor fixes released</div>
             </div>
           </div>
@@ -68,8 +71,8 @@ export default function RegressionsLanding() {
       </section>
 
       {/* The Problem */}
-      <section className="py-20 border-b border-white/[0.06]">
-        <div className="container mx-auto px-6 max-w-4xl text-center">
+      <section className="py-12 sm:py-20 border-b border-white/[0.06]">
+        <div className="container mx-auto px-4 sm:px-6 max-w-4xl text-center">
           <h2 className="text-3xl font-bold text-white mb-6">Proactive Pattern Prevention</h2>
           <p className="text-lg text-white/50 leading-relaxed mb-8">
             Academic benchmarks measure AI tools on curated test sets. Incident databases catalog production outcomes. But nobody was documenting the repeatable patterns that AI tools reliably get wrong in normal developer workflows. <strong className="text-white/70">Until now.</strong>
@@ -78,24 +81,24 @@ export default function RegressionsLanding() {
       </section>
 
       {/* How it works */}
-      <section className="py-20 border-b border-white/[0.06]">
-        <div className="container mx-auto px-6">
+      <section className="py-12 sm:py-20 border-b border-white/[0.06]">
+        <div className="container mx-auto px-4 sm:px-6">
           <div className="grid md:grid-cols-3 gap-px bg-white/[0.04] rounded-2xl overflow-hidden">
-            <div className="bg-[#0d0e1a] p-10 space-y-4">
+            <div className="bg-[#0d0e1a] p-6 sm:p-10 space-y-4">
               <div className="w-12 h-12 bg-purple-500/10 border border-purple-500/20 rounded-xl flex justify-center items-center text-purple-400 mb-4 font-bold text-xl">1</div>
               <h3 className="text-xl font-semibold text-white">Report</h3>
               <p className="text-white/40 leading-relaxed">
                 Observed an AI tool reliably producing incorrect code? Document it. Anonymous submissions welcome.
               </p>
             </div>
-            <div className="bg-[#0d0e1a] p-10 space-y-4">
+            <div className="bg-[#0d0e1a] p-6 sm:p-10 space-y-4">
               <div className="w-12 h-12 bg-blue-500/10 border border-blue-500/20 rounded-xl flex justify-center items-center text-blue-400 mb-4 font-bold text-xl">2</div>
               <h3 className="text-xl font-semibold text-white">Detect</h3>
               <p className="text-white/40 leading-relaxed">
                 Scan your repos for known patterns. Get alerted when new patterns match your code through GitHub Actions.
               </p>
             </div>
-            <div className="bg-[#0d0e1a] p-10 space-y-4">
+            <div className="bg-[#0d0e1a] p-6 sm:p-10 space-y-4">
               <div className="w-12 h-12 bg-emerald-500/10 border border-emerald-500/20 rounded-xl flex justify-center items-center text-emerald-400 mb-4 font-bold text-xl">3</div>
               <h3 className="text-xl font-semibold text-white">Track</h3>
               <p className="text-white/40 leading-relaxed">
@@ -107,19 +110,19 @@ export default function RegressionsLanding() {
       </section>
 
       {/* Database Highlights */}
-      <section className="py-20 border-b border-white/[0.06]">
-        <div className="container mx-auto px-6 max-w-5xl">
-          <div className="grid md:grid-cols-2 gap-12">
+      <section className="py-12 sm:py-20 border-b border-white/[0.06]">
+        <div className="container mx-auto px-4 sm:px-6 max-w-5xl">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12">
             <div>
               <h2 className="text-2xl font-bold text-white mb-6">Latest Patterns</h2>
-              <div className="p-10 bg-white/[0.02] border border-white/[0.06] rounded-xl text-center">
+              <div className="p-6 sm:p-10 bg-white/[0.02] border border-white/[0.06] rounded-xl text-center">
                 <p className="text-white/40 mb-3">No regressions published yet.</p>
                 <Link href="/regressions/submit" className="text-purple-400 hover:text-purple-300 font-medium">Be the first to document →</Link>
               </div>
             </div>
             <div>
               <h2 className="text-2xl font-bold text-white mb-6">Recently Fixed by Vendors</h2>
-              <div className="p-10 bg-white/[0.02] border border-white/[0.06] rounded-xl text-center">
+              <div className="p-6 sm:p-10 bg-white/[0.02] border border-white/[0.06] rounded-xl text-center">
                 <p className="text-white/40 mb-3">Test harness pending automated runs against models.</p>
                 <Link href="/regressions/vendor" className="text-emerald-400 hover:text-emerald-300 font-medium">Vendor Portal →</Link>
               </div>
@@ -129,12 +132,12 @@ export default function RegressionsLanding() {
       </section>
 
       {/* Browse By */}
-      <section className="py-20 border-b border-white/[0.06]">
-        <div className="container mx-auto px-6 max-w-5xl space-y-10">
+      <section className="py-12 sm:py-20 border-b border-white/[0.06]">
+        <div className="container mx-auto px-4 sm:px-6 max-w-5xl space-y-8 sm:space-y-10">
           <h2 className="text-2xl font-bold text-white">Browse By</h2>
           <div className="space-y-6">
             <div>
-              <h3 className="text-xs font-semibold uppercase tracking-wider text-white/30 mb-3">By category</h3>
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-white/60 mb-3">By category</h3>
               <div className="flex flex-wrap gap-2">
                 {categoryLinks.map(c => (
                   <Link key={c} href={`/regressions/browse?category=${c}`} className="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/[0.04] text-white/60 border border-white/[0.08] hover:bg-white/[0.08] transition-colors">{c}</Link>
@@ -142,7 +145,7 @@ export default function RegressionsLanding() {
               </div>
             </div>
             <div>
-              <h3 className="text-xs font-semibold uppercase tracking-wider text-white/30 mb-3">By severity</h3>
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-white/60 mb-3">By severity</h3>
               <div className="flex flex-wrap gap-2">
                 {severityLinks.map(s => (
                   <Link key={s} href={`/regressions/browse?severity=${s}`} className={`px-3 py-1.5 rounded-lg text-xs font-medium border transition-colors ${
@@ -155,7 +158,7 @@ export default function RegressionsLanding() {
               </div>
             </div>
             <div>
-              <h3 className="text-xs font-semibold uppercase tracking-wider text-white/30 mb-3">By language</h3>
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-white/60 mb-3">By language</h3>
               <div className="flex flex-wrap gap-2">
                 {languageLinks.map(l => (
                   <Link key={l} href={`/regressions/browse?language=${l.toLowerCase()}`} className="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/[0.04] text-white/60 border border-white/[0.08] hover:bg-white/[0.08] transition-colors">{l}</Link>
@@ -163,7 +166,7 @@ export default function RegressionsLanding() {
               </div>
             </div>
             <div>
-              <h3 className="text-xs font-semibold uppercase tracking-wider text-white/30 mb-3">By tool</h3>
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-white/60 mb-3">By tool</h3>
               <div className="flex flex-wrap gap-2">
                 {toolLinks.map(t => (
                   <Link key={t} href={`/regressions/browse?tool=${t.toLowerCase()}`} className="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/[0.04] text-white/60 border border-white/[0.08] hover:bg-white/[0.08] transition-colors">{t}</Link>
@@ -171,7 +174,7 @@ export default function RegressionsLanding() {
               </div>
             </div>
             <div>
-              <h3 className="text-xs font-semibold uppercase tracking-wider text-white/30 mb-3">By pattern</h3>
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-white/60 mb-3">By pattern</h3>
               <div className="flex flex-wrap gap-2">
                 {patternLinks.map(p => (
                   <Link key={p} href={`/regressions/browse?pattern=${p}`} className="px-3 py-1.5 rounded-lg text-xs font-medium bg-white/[0.04] text-white/60 border border-white/[0.08] hover:bg-white/[0.08] transition-colors">{p}</Link>
@@ -183,9 +186,9 @@ export default function RegressionsLanding() {
       </section>
 
       {/* Ethical Commitments & Sub/Vendor */}
-      <section className="py-20 border-b border-white/[0.06] bg-white/[0.01]">
-        <div className="container mx-auto px-6 max-w-5xl">
-          <div className="grid md:grid-cols-2 gap-16">
+      <section className="py-12 sm:py-20 border-b border-white/[0.06] bg-white/[0.01]">
+        <div className="container mx-auto px-4 sm:px-6 max-w-5xl">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-16">
             <div className="space-y-8">
               <h3 className="text-xl font-semibold text-white">Connect and Integrate</h3>
               <p className="text-white/50 text-sm leading-relaxed">

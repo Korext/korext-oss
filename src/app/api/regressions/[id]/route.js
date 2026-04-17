@@ -1,8 +1,8 @@
 import { NextResponse } from 'next/server';
 import { getRegressionPattern } from '@/lib/regression-storage';
 
-export async function GET(request, { params }) {
-  const { id } = params;
+export async function GET(request, context) {
+  const { id } = await context.params;
   const pattern = await getRegressionPattern(id);
   
   if (!pattern) {

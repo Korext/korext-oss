@@ -12,6 +12,21 @@ export function organizationSchema() {
   };
 }
 
+export function webSiteSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Korext Open Source',
+    url: 'https://oss.korext.com',
+    description: 'Open standards and tools for AI code transparency.',
+    publisher: {
+      '@type': 'Organization',
+      name: 'Korext',
+      url: 'https://korext.com',
+    },
+  };
+}
+
 export function softwareApplicationSchema({ name, description, url, downloadUrl, version, license, applicationCategory }) {
   return {
     '@context': 'https://schema.org',

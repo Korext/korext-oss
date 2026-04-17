@@ -34,7 +34,7 @@ export class IncidentStorage {
       return yaml.load(fs.readFileSync(file, 'utf8'));
     }
     
-    // Check if it's an example (hardcoded for phase 8)
+    // Check examples directory for seed data
     const examplesDir = path.join(process.cwd(), '../ai-incident-registry/examples');
     const exampleFile = fs.readdirSync(examplesDir).find(f => f.includes(id));
     if (exampleFile) {

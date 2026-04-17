@@ -46,11 +46,39 @@
     color: var(--foreground);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  /* Smooth focus ring for keyboard nav (accessibility) */
+  :focus-visible {
+    outline: 2px solid rgba(124, 58, 237, 0.6);
+    outline-offset: 2px;
+    border-radius: 4px;
   }
 
   ::selection {
     background: rgba(124, 58, 237, 0.4);
     color: #fff;
+  }
+
+  /* Scroll anchors clear the sticky header */
+  [id] {
+    scroll-margin-top: 5rem;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
   }
 }
 
@@ -70,5 +98,19 @@
     border-color: rgba(124, 58, 237, 0.3);
     box-shadow: 0 0 40px rgba(124, 58, 237, 0.08), 0 0 80px rgba(124, 58, 237, 0.04);
     transform: translateY(-2px);
+  }
+}
+
+/* Accessibility: respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .card-glow:hover {
+    transform: none;
   }
 }

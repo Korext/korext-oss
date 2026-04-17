@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import GlobalBackground from '@/components/GlobalBackground';
-import { organizationSchema, JsonLd } from '@/lib/schema';
+import { organizationSchema, webSiteSchema, JsonLd } from '@/lib/schema';
 
 const inter = Inter({ subsets: ['latin'], display: 'swap' });
 
@@ -19,17 +19,47 @@ export const metadata = {
     siteName: 'Korext Open Source',
     locale: 'en_US',
     type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Korext Open Source' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@korext',
+    images: ['/og-image.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="dns-prefetch" href="//api.github.com" />
+        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
       <body className={`${inter.className} min-h-screen flex flex-col`}>
         <JsonLd data={organizationSchema()} />
+        <JsonLd data={webSiteSchema()} />
+        {/* Skip to main content link for keyboard/screen reader users */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[99999] focus:px-4 focus:py-2 focus:rounded-lg focus:bg-violet-600 focus:text-white focus:text-sm focus:font-medium focus:outline-none focus:ring-2 focus:ring-violet-400 focus:ring-offset-2 focus:ring-offset-[#0d0e1a]"
+        >
+          Skip to main content
+        </a>
         <GlobalBackground />
         <Header />
-        <main className="flex-1 relative z-10">
+        <main id="main-content" className="flex-1 relative z-10" role="main">
           {children}
         </main>
         <Footer />

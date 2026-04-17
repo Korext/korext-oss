@@ -1,8 +1,8 @@
 import { NextResponse } from 'next/server';
 import { IncidentStorage } from '@/lib/incident-storage';
 
-export async function GET(request, { params }) {
-  const ruleId = params.id;
+export async function GET(request, context) {
+  const { id: ruleId } = await context.params;
   const storage = new IncidentStorage();
   const incidents = await storage.getAllPublished();
   

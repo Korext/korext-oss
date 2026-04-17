@@ -1,6 +1,6 @@
 /**
- * Registration storage abstraction imitating incidents/registry storage.
- * Reads logic from local .yaml structures or mocks when empty.
+ * File-backed storage for regression patterns.
+ * Reads published patterns from local YAML files.
  */
 import fs from 'fs';
 import path from 'path';
@@ -54,7 +54,7 @@ export async function detectPatternsInCode(code) {
     const all = await getAllRegressionPatterns();
     const matches = [];
     
-    // Very rudimentary detection mock for demonstration
+    // Match against custom regex rules from published patterns
     for (const pattern of all) {
         if (pattern.detection?.custom_detection?.regex) {
             try {

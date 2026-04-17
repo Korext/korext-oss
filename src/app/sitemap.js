@@ -14,5 +14,14 @@ export default function sitemap() {
     { url: `${base}/regressions`, lastModified: now, priority: 0.9, changeFrequency: 'daily' },
     { url: `${base}/regressions/browse`, lastModified: now, priority: 0.8, changeFrequency: 'daily' },
     { url: `${base}/regressions/submit`, lastModified: now, priority: 0.7, changeFrequency: 'monthly' },
+    { url: `${base}/regressions/vendor`, lastModified: now, priority: 0.7, changeFrequency: 'monthly' },
+    { url: `${base}/radar`, lastModified: now, priority: 0.9, changeFrequency: 'hourly' },
+    { url: `${base}/radar/explore`, lastModified: now, priority: 0.8, changeFrequency: 'weekly' },
+    { url: `${base}/radar/api`, lastModified: now, priority: 0.8, changeFrequency: 'monthly' },
+    { url: `${base}/commit-carbon`, lastModified: now, priority: 0.9, changeFrequency: 'weekly' },
+    { url: `${base}/commit-carbon/calculator`, lastModified: now, priority: 0.8, changeFrequency: 'monthly' },
+    { url: `${base}/commit-carbon/methodology`, lastModified: now, priority: 0.8, changeFrequency: 'monthly' },
+    { url: `${base}/commit-carbon/reports`, lastModified: now, priority: 0.8, changeFrequency: 'monthly' },
+    { url: `${base}/team`, lastModified: now, priority: 0.7, changeFrequency: 'monthly' },
   ];
 }

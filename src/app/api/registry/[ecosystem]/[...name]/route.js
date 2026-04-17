@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
-export async function GET(request, { params }) {
-  const { ecosystem, name } = params;
+export async function GET(request, context) {
+  const { ecosystem, name } = await context.params;
   // If the URL is meant to have a version at the end, it will be the last element of the name array
   // Example: /api/registry/npm/lodash/4.17.21 -> name: ['lodash', '4.17.21']
   // We can parse it here. For simplicity in v1.0, we just join it.

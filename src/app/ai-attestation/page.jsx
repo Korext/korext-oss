@@ -5,7 +5,7 @@ import { JsonLd, softwareApplicationSchema, breadcrumbSchema, faqSchema } from '
 
 export const metadata = buildMetadata({
   title: 'AI Code Attestation: Track AI Generated Code in Your Repository',
-  description: 'Open standard for tracking AI generated code in any repository. Detects Copilot, Cursor, Claude Code, and 16 more tools. Install with npx in one command.',
+  description: 'Open standard for tracking AI generated code in any repository. Detects Copilot, Cursor, Claude Code, and 16 more tools. 19 AI coding tools total. Install with npx in one command.',
   path: '/ai-attestation',
   tags: ['AI code attestation', 'AI code transparency', 'track AI generated code', 'AI supply chain attestation', 'detect copilot commits', 'cursor commit tracking', 'AI coding tool detection'],
 });
@@ -82,13 +82,13 @@ ai:
         description: 'Open standard for tracking AI generated code in any repository.',
         url: 'https://oss.korext.com/ai-attestation',
         downloadUrl: 'https://www.npmjs.com/package/@korext/ai-attestation',
-        version: '1.0.0',
+        version: '1.0.2',
         license: 'https://opensource.org/licenses/Apache-2.0',
         applicationCategory: 'DeveloperApplication',
       })} />
       <JsonLd data={faqSchema(faqs)} />
 
-      <div className="container mx-auto px-6 space-y-24 max-w-5xl">
+      <div className="container mx-auto px-4 sm:px-6 space-y-16 sm:space-y-24 max-w-5xl">
 
         {/* Breadcrumb */}
         <nav className="text-sm text-white/30">
@@ -103,14 +103,14 @@ ai:
             <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
             Open Standard
           </div>
-          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.08]">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.08]">
             Track AI generated code in your repository
           </h1>
           <p className="text-xl text-white/50 leading-relaxed">
             An open standard for tracking and governing AI generated code in any repository.
           </p>
           <div className="pt-4 flex flex-col items-center gap-4">
-            <code className="px-8 py-3 rounded-xl bg-white/[0.04] border border-white/[0.08] text-lg font-mono text-white/80 select-all">
+            <code className="px-4 sm:px-8 py-3 rounded-xl bg-white/[0.04] border border-white/[0.08] text-sm sm:text-lg font-mono text-white/80 select-all break-all">
               npx @korext/ai-attestation init
             </code>
           </div>
@@ -118,19 +118,19 @@ ai:
 
         {/* Feature Cards */}
         <div className="grid md:grid-cols-3 gap-px bg-white/[0.04] rounded-2xl overflow-hidden">
-          <div className="bg-[#0d0e1a] p-8 space-y-4">
+          <div className="bg-[#0d0e1a] p-5 sm:p-8 space-y-4">
             <h3 className="text-xl font-semibold text-white">Tracks</h3>
             <p className="text-white/40 leading-relaxed text-[15px]">
-              Detects AI tool usage across your git history. Copilot, Cursor, Claude Code, Aider, and 7 more. Fully automatic via git hook.
+              Detects AI tool usage across your git history. Copilot, Cursor, Claude Code, Aider, and 15 more. 19 tools total. Fully automatic via git hook.
             </p>
           </div>
-          <div className="bg-[#0d0e1a] p-8 space-y-4">
+          <div className="bg-[#0d0e1a] p-5 sm:p-8 space-y-4">
             <h3 className="text-xl font-semibold text-white">Attests</h3>
             <p className="text-white/40 leading-relaxed text-[15px]">
               Produces a human readable <code className="text-sm text-blue-400">.ai-attestation.yaml</code> file with tool breakdown, commit counts, and governance status.
             </p>
           </div>
-          <div className="bg-[#0d0e1a] p-8 space-y-4">
+          <div className="bg-[#0d0e1a] p-5 sm:p-8 space-y-4">
             <h3 className="text-xl font-semibold text-white">Governs</h3>
             <p className="text-white/40 leading-relaxed text-[15px]">
               Connects to governance engines for compliance scanning, proof bundles, and audit evidence.
@@ -146,7 +146,7 @@ ai:
               AI Attestation is a declarative YAML file stored in your repository root, alongside LICENSE and SECURITY.md. It provides machine readable answers to regulators, auditors, and engineering leaders about how much of your code is AI generated.
             </p>
             <div className="space-y-4 pt-4">
-               <h3 className="text-xs font-semibold uppercase tracking-[0.15em] text-white/30">Badge Preview</h3>
+               <h3 className="text-xs font-semibold uppercase tracking-[0.15em] text-white/60">Badge Preview</h3>
                <div className="border border-white/[0.06] rounded-xl p-4 bg-white/[0.02] w-full max-w-sm flex items-center gap-4">
                  <img src="https://oss.korext.com/api/badge/acme/payments-service" alt="AI Attestation Badge" />
                  <span className="text-sm text-white/40 break-all">acme / payments-service</span>
@@ -175,7 +175,7 @@ ai:
         <div className="space-y-8">
           <div className="text-center space-y-4">
             <h2 className="text-3xl font-bold text-white">Supported Tools</h2>
-            <p className="text-white/40">Detects 11 AI coding tools from publicly observable git patterns.</p>
+            <p className="text-white/40">Detects 19 AI coding tools from publicly observable git patterns.</p>
           </div>
           <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
             {tools.map(tool => (
@@ -187,7 +187,7 @@ ai:
         </div>
 
         {/* Why this matters */}
-        <div className="max-w-3xl mx-auto text-center space-y-6 rounded-2xl border border-blue-500/10 bg-blue-500/[0.02] p-8 md:p-12">
+        <div className="max-w-3xl mx-auto text-center space-y-6 rounded-2xl border border-blue-500/10 bg-blue-500/[0.02] p-5 sm:p-8 md:p-12">
           <h2 className="text-2xl md:text-3xl font-bold text-white">Why This Matters</h2>
           <p className="text-lg text-white/40 leading-relaxed">
             35% of production code is now AI generated. The EU AI Act requires transparency. SOX auditors are asking. Insurance questionnaires now include AI tool usage. Your team needs answers before the questions arrive.
@@ -209,7 +209,7 @@ ai:
 
         {/* CTAs */}
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          <div className="p-8 border border-white/[0.06] bg-white/[0.02] rounded-2xl text-center space-y-6">
+          <div className="p-5 sm:p-8 border border-white/[0.06] bg-white/[0.02] rounded-2xl text-center space-y-6">
             <h3 className="text-xl font-semibold text-white">Governance Integration</h3>
             <p className="text-white/40">
               AI Attestation tracks your AI code. Korext governs it.
@@ -218,7 +218,7 @@ ai:
               Install Korext
             </a>
           </div>
-          <div className="p-8 border border-white/[0.06] bg-white/[0.02] rounded-2xl text-center space-y-6">
+          <div className="p-5 sm:p-8 border border-white/[0.06] bg-white/[0.02] rounded-2xl text-center space-y-6">
             <h3 className="text-xl font-semibold text-white">Open Source</h3>
             <p className="text-white/40">
               Help us expand the standard. Contribute patterns and tools.

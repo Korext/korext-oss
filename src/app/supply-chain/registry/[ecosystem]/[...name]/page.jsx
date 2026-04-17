@@ -13,9 +13,37 @@ export async function generateMetadata({ params }) {
   });
 }
 
+async function fetchAttestationData(ecosystem, pkgName) {
+  try {
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://oss.korext.com';
+    const res = await fetch(`${baseUrl}/api/registry/${ecosystem}/${pkgName}`, { cache: 'no-store' });
+    if (res.ok) {
+      return await res.json();
+    }
+  } catch {
+    // Fall through to defaults
+  }
+  return { ecosystem, name: pkgName, ai_percentage: 0, governance_tier: 'NONE', tools: [] };
+}
+
+function tierBadgeColor(tier) {
+  switch (tier) {
+    case 'FULL': return 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20';
+    case 'GOVERNED': return 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20';
+    case 'MODERATE': return 'bg-yellow-500/10 text-yellow-400 border-yellow-500/20';
+    case 'MINIMAL': return 'bg-orange-500/10 text-orange-400 border-orange-500/20';
+    default: return 'bg-white/[0.04] text-white/50 border-white/[0.08]';
+  }
+}
+
 export default async function PackageDetailsPage({ params }) {
   const { ecosystem, name } = await params;
   const pkgName = name.join('/');
+  const data = await fetchAttestationData(ecosystem, pkgName);
+
+  const pct = typeof data.ai_percentage === 'number' ? data.ai_percentage : 0;
+  const tier = data.governance_tier || 'NONE';
+  const tools = data.tools || [];
 
   return (
     <div className="py-12 md:py-20">
@@ -50,15 +78,29 @@ export default async function PackageDetailsPage({ params }) {
 
           <div className="flex gap-4">
             <div className="px-6 py-4 border border-white/[0.06] bg-white/[0.02] rounded-xl text-center">
-              <div className="text-3xl font-bold text-white">0%</div>
+              <div className="text-3xl font-bold text-white">{pct}%</div>
               <div className="text-xs text-white/30 uppercase tracking-wide mt-1">AI Assisted</div>
             </div>
-            <div className="px-6 py-4 border border-white/[0.06] bg-white/[0.02] rounded-xl text-center">
-              <div className="text-3xl font-bold text-white">NONE</div>
-              <div className="text-xs text-white/30 uppercase tracking-wide mt-1">Governance</div>
+            <div className={`px-6 py-4 border rounded-xl text-center ${tierBadgeColor(tier)}`}>
+              <div className="text-3xl font-bold">{tier}</div>
+              <div className="text-xs opacity-60 uppercase tracking-wide mt-1">Governance</div>
             </div>
           </div>
         </div>
+
+        {/* Tools section */}
+        {tools.length > 0 && (
+          <div className="p-6 border border-white/[0.06] bg-white/[0.02] rounded-2xl space-y-4">
+            <h3 className="text-xs font-semibold uppercase tracking-[0.15em] text-white/30">AI Tools Detected</h3>
+            <div className="flex flex-wrap gap-2">
+              {tools.map((tool, i) => (
+                <span key={i} className="px-3 py-1.5 rounded-lg bg-white/[0.04] border border-white/[0.08] text-sm text-white/70">
+                  {typeof tool === 'string' ? tool : tool.name || tool.id}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Details */}
         <div className="grid md:grid-cols-2 gap-6">
@@ -90,6 +132,7 @@ export default async function PackageDetailsPage({ params }) {
             </p>
             <div className="space-y-3">
               <div className="border border-white/[0.06] rounded-xl p-4 bg-white/[0.02] flex items-center gap-4">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={`/api/supply-chain/badge/${ecosystem}/${pkgName}`} alt="AI Attestation Badge" />
                 <span className="text-sm text-white/30">{ecosystem}/{pkgName}</span>
               </div>

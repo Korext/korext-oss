@@ -26,7 +26,7 @@ export async function GET(request) {
     <category>${inc.severity}</category>
     <pubDate>${new Date(inc.published_date).toUTCString()}</pubDate>
     <guid>https://oss.korext.com/incidents/${inc.identifier}</guid>
-    <author>registry@korext.com (AI Incident Registry)</author>
+    <author>maintainers@korext.com (AI Incident Registry)</author>
   </item>`).join('')}
 </channel>
 </rss>`;

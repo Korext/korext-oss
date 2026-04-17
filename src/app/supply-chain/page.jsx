@@ -64,7 +64,7 @@ Report: .supply-chain-attestation.yaml`;
         applicationCategory: 'DeveloperApplication',
       })} />
 
-      <div className="container mx-auto px-6 space-y-24 max-w-5xl">
+      <div className="container mx-auto px-4 sm:px-6 space-y-16 sm:space-y-24 max-w-5xl">
 
         {/* Breadcrumb */}
         <nav className="text-sm text-white/30">
@@ -79,21 +79,21 @@ Report: .supply-chain-attestation.yaml`;
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
             Category Creating
           </div>
-          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.08]">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.08]">
             Know your supply chain&apos;s AI
           </h1>
           <p className="text-xl text-white/50 leading-relaxed">
             AI provenance across every dependency in your project. Fourteen ecosystems. CycloneDX and SPDX integration. Private registry support.
           </p>
           <div className="pt-4 flex flex-col items-center gap-4">
-            <code className="px-8 py-3 rounded-xl bg-white/[0.04] border border-white/[0.08] text-lg font-mono text-white/80 select-all">
+            <code className="px-4 sm:px-8 py-3 rounded-xl bg-white/[0.04] border border-white/[0.08] text-sm sm:text-lg font-mono text-white/80 select-all break-all">
               npx @korext/supply-check scan
             </code>
           </div>
         </div>
 
         {/* The Problem */}
-        <div className="max-w-3xl mx-auto text-center space-y-6 rounded-2xl border border-emerald-500/10 bg-emerald-500/[0.02] p-8 md:p-12">
+        <div className="max-w-3xl mx-auto text-center space-y-6 rounded-2xl border border-emerald-500/10 bg-emerald-500/[0.02] p-5 sm:p-8 md:p-12">
           <h2 className="text-2xl md:text-3xl font-bold text-white">The gap in supply chain tooling</h2>
           <p className="text-lg text-white/40 leading-relaxed">
             You know your vulnerabilities thanks to Snyk and Dependabot. You know your licenses thanks to FOSSA. But you do not know what percentage of your software supply chain was written with AI assistance.
@@ -116,19 +116,19 @@ Report: .supply-chain-attestation.yaml`;
 
         {/* How it works */}
         <div className="grid md:grid-cols-3 gap-px bg-white/[0.04] rounded-2xl overflow-hidden">
-          <div className="bg-[#0d0e1a] p-8 space-y-4">
+          <div className="bg-[#0d0e1a] p-5 sm:p-8 space-y-4">
             <h3 className="text-xl font-semibold text-white">Scan</h3>
             <p className="text-white/40 leading-relaxed text-[15px]">
               One command scans your lockfile, enumerates every dependency, and queries the attestation registry for AI provenance data.
             </p>
           </div>
-          <div className="bg-[#0d0e1a] p-8 space-y-4">
+          <div className="bg-[#0d0e1a] p-5 sm:p-8 space-y-4">
             <h3 className="text-xl font-semibold text-white">Report</h3>
             <p className="text-white/40 leading-relaxed text-[15px]">
               Get a full breakdown: weighted AI percentage, governance tiers, high risk dependencies, and tool distribution across your supply chain.
             </p>
           </div>
-          <div className="bg-[#0d0e1a] p-8 space-y-4">
+          <div className="bg-[#0d0e1a] p-5 sm:p-8 space-y-4">
             <h3 className="text-xl font-semibold text-white">Enforce</h3>
             <p className="text-white/40 leading-relaxed text-[15px]">
               Set policies in CI. Block ungoverned AI dependencies. Require attestation for critical packages. Export CycloneDX or SPDX.
@@ -186,7 +186,7 @@ Report: .supply-chain-attestation.yaml`;
 
         {/* SBOM + CI */}
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="p-8 border border-white/[0.06] bg-white/[0.02] rounded-2xl space-y-5">
+          <div className="p-5 sm:p-8 border border-white/[0.06] bg-white/[0.02] rounded-2xl space-y-5">
             <h3 className="text-xl font-semibold text-white">SBOM Integration</h3>
             <p className="text-white/40 leading-relaxed text-[15px]">
               Export your supply chain as CycloneDX 1.6 or SPDX 2.3 with AI properties embedded via standard extension mechanisms. Compatible with any SBOM consumer.
@@ -195,7 +195,7 @@ Report: .supply-chain-attestation.yaml`;
               supply-check sbom --format cyclonedx
             </code>
           </div>
-          <div className="p-8 border border-white/[0.06] bg-white/[0.02] rounded-2xl space-y-5">
+          <div className="p-5 sm:p-8 border border-white/[0.06] bg-white/[0.02] rounded-2xl space-y-5">
             <h3 className="text-xl font-semibold text-white">CI/CD Policy Gate</h3>
             <p className="text-white/40 leading-relaxed text-[15px]">
               GitHub Action enforces your policy. Set maximum AI percentage, block ungoverned dependencies, require attestation for critical packages.
@@ -207,7 +207,7 @@ Report: .supply-chain-attestation.yaml`;
         </div>
 
         {/* Enterprise */}
-        <div className="max-w-3xl mx-auto text-center space-y-6 rounded-2xl border border-white/[0.06] bg-white/[0.02] p-8 md:p-12">
+        <div className="max-w-3xl mx-auto text-center space-y-6 rounded-2xl border border-white/[0.06] bg-white/[0.02] p-5 sm:p-8 md:p-12">
           <h2 className="text-2xl md:text-3xl font-bold text-white">Private Registry for Enterprises</h2>
           <p className="text-lg text-white/40 leading-relaxed">
             Host your own registry for internal packages. Mirror the public registry for full coverage. Four storage backends. Docker, Kubernetes, and Docker Compose manifests included.
@@ -221,7 +221,7 @@ Report: .supply-chain-attestation.yaml`;
 
         {/* Specification */}
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          <div className="p-8 border border-white/[0.06] bg-white/[0.02] rounded-2xl text-center space-y-6">
+          <div className="p-5 sm:p-8 border border-white/[0.06] bg-white/[0.02] rounded-2xl text-center space-y-6">
             <h3 className="text-xl font-semibold text-white">Read the Specification</h3>
             <p className="text-white/40">
               The full specification is CC0 1.0 (public domain). Open standard, no restrictions.
@@ -230,7 +230,7 @@ Report: .supply-chain-attestation.yaml`;
               View SPEC.md
             </a>
           </div>
-          <div className="p-8 border border-white/[0.06] bg-white/[0.02] rounded-2xl text-center space-y-6">
+          <div className="p-5 sm:p-8 border border-white/[0.06] bg-white/[0.02] rounded-2xl text-center space-y-6">
             <h3 className="text-xl font-semibold text-white">Open Source</h3>
             <p className="text-white/40">
               Help us expand ecosystem coverage and build the attestation registry.

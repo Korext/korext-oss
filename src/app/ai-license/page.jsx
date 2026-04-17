@@ -38,7 +38,7 @@ export default function AiLicensePage() {
       })} />
       <JsonLd data={faqSchema(faqs)} />
 
-      <div className="container mx-auto px-6 space-y-24 max-w-5xl">
+      <div className="container mx-auto px-4 sm:px-6 space-y-16 sm:space-y-24 max-w-5xl">
 
         {/* Breadcrumb */}
         <nav className="text-sm text-white/30">
@@ -53,13 +53,13 @@ export default function AiLicensePage() {
             <span className="w-1.5 h-1.5 rounded-full bg-violet-400 animate-pulse" />
             Category Creating Open Standard
           </div>
-          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.08]">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.08]">
             Declare your <span className="text-gradient">AI provenance</span>
           </h1>
           <p className="text-xl text-white/50 leading-relaxed max-w-2xl mx-auto">
             An open standard for declaring AI tool usage in any open source project. Attaches to any license. Works with any governance engine.
           </p>
-          <div className="flex items-center justify-center gap-4 pt-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
             <a href="#generator" className="px-8 py-3 rounded-xl bg-violet-600 text-white font-semibold text-sm hover:bg-violet-500 transition-all border border-violet-500/30 shadow-lg shadow-violet-500/10">
               Generate Notice
             </a>
@@ -70,7 +70,7 @@ export default function AiLicensePage() {
         </section>
 
         {/* THE PROBLEM */}
-        <section className="max-w-3xl mx-auto rounded-2xl border border-white/[0.06] bg-white/[0.02] p-8 md:p-12 space-y-4">
+        <section className="max-w-3xl mx-auto rounded-2xl border border-white/[0.06] bg-white/[0.02] p-5 sm:p-8 md:p-12 space-y-4">
           <h2 className="text-2xl font-bold text-white">The Gap in Open Source</h2>
           <p className="text-lg text-white/50 leading-relaxed">
             When you open source code today, your license covers copyright and usage rights. It does not cover AI authorship.
@@ -89,7 +89,7 @@ export default function AiLicensePage() {
               { step: '2', title: 'Generate notice', cmd: 'npx @korext/ai-license generate' },
               { step: '3', title: 'Reference license', cmd: 'npx @korext/ai-license reference' },
             ].map((s) => (
-              <div key={s.step} className="bg-[#0d0e1a] p-8 space-y-4">
+              <div key={s.step} className="bg-[#0d0e1a] p-5 sm:p-8 space-y-4">
                 <div className="w-10 h-10 rounded-xl bg-violet-500/10 text-violet-400 flex items-center justify-center font-bold text-lg">{s.step}</div>
                 <h3 className="font-semibold text-white">{s.title}</h3>
                 <code className="block text-sm font-mono text-emerald-400/80 bg-white/[0.02] border border-white/[0.06] rounded-lg px-4 py-3 select-all">{s.cmd}</code>
@@ -113,7 +113,7 @@ export default function AiLicensePage() {
               <div className="w-3 h-3 rounded-full bg-[#27c93f]" />
               <div className="ml-4 text-xs font-medium text-white/30 tracking-wider font-mono">AI-LICENSE</div>
             </div>
-            <pre className="p-8 text-sm text-emerald-400/70 font-mono whitespace-pre-wrap leading-relaxed">
+            <pre className="p-4 sm:p-8 text-sm text-emerald-400/70 font-mono whitespace-pre-wrap leading-relaxed overflow-x-auto">
 {`===============================================
 AI LICENSE NOTICE (Version 1.0)
 ===============================================
@@ -190,17 +190,17 @@ https://oss.korext.com/report/acme/payments
         <section className="space-y-8">
           <h2 className="text-3xl font-bold text-white">Integrates With</h2>
           <div className="grid sm:grid-cols-3 gap-px bg-white/[0.04] rounded-2xl overflow-hidden">
-            <div className="bg-[#0d0e1a] p-8 text-center space-y-3">
+            <div className="bg-[#0d0e1a] p-5 sm:p-8 text-center space-y-3">
               <div className="text-3xl mb-2">📊</div>
               <h3 className="font-semibold text-white">AI Attestation</h3>
               <p className="text-sm text-white/40">Reads data from <code className="text-violet-400">.ai-attestation.yaml</code> to populate provenance fields automatically.</p>
             </div>
-            <div className="bg-[#0d0e1a] p-8 text-center space-y-3">
+            <div className="bg-[#0d0e1a] p-5 sm:p-8 text-center space-y-3">
               <div className="text-3xl mb-2">🛡️</div>
               <h3 className="font-semibold text-white">Any Governance Engine</h3>
               <p className="text-sm text-white/40">Any compliance engine can populate governance fields. Korext provides ATTESTED tier with signed proof bundles.</p>
             </div>
-            <div className="bg-[#0d0e1a] p-8 text-center space-y-3">
+            <div className="bg-[#0d0e1a] p-5 sm:p-8 text-center space-y-3">
               <div className="text-3xl mb-2">📄</div>
               <h3 className="font-semibold text-white">Any Existing License</h3>
               <p className="text-sm text-white/40">MIT, Apache 2.0, GPL, BSD, and all other licenses. The notice is an addendum, not a replacement.</p>

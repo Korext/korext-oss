@@ -14,14 +14,14 @@ const projects = [
     slug: 'ai-attestation',
     name: 'AI Attestation',
     tagline: 'Track AI generated code in your repository',
-    description: 'An open standard for tracking and governing AI generated code in any repository. Detects Copilot, Cursor, Claude Code, and 16 more tools from publicly observable git patterns.',
+    description: 'An open standard for tracking and governing AI generated code in any repository. Detects Copilot, Cursor, Claude Code, and 16 more tools. 19 AI coding tools total.',
     install: 'npx @korext/ai-attestation init',
     href: '/ai-attestation',
     github: 'https://github.com/korext/ai-attestation',
     npm: 'https://www.npmjs.com/package/@korext/ai-attestation',
     specLicense: 'CC0 1.0',
     codeLicense: 'Apache 2.0',
-    version: '1.0.0',
+    version: '1.0.2',
     color: 'blue',
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -101,7 +101,7 @@ const projects = [
     npm: 'https://www.npmjs.com/package/@korext/regression-submit',
     specLicense: 'CC0 1.0',
     codeLicense: 'Apache 2.0',
-    version: '1.0.2',
+    version: '1.0.3',
     color: 'purple',
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -109,6 +109,46 @@ const projects = [
       </svg>
     ),
     features: ['Automated test harness', 'Version awareness tracking', 'API detection', 'GitHub Action'],
+  },
+  {
+    slug: 'radar',
+    name: 'AI Code Radar',
+    tagline: 'The real-time pulse of AI code adoption',
+    description: 'The live public dashboard showing AI code adoption and market share across open source. Powered by the attestation and supply chain data flowing through the ecosystem.',
+    install: 'npm install @korext/radar-data',
+    href: '/radar',
+    github: 'https://github.com/korext/ai-code-radar',
+    npm: 'https://www.npmjs.com/package/@korext/radar-data',
+    specLicense: 'CC0 1.0',
+    codeLicense: 'Apache 2.0',
+    version: '1.0.0',
+    color: 'cyan',
+    icon: (
+      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" />
+      </svg>
+    ),
+    features: ['Public API', 'Time series data', 'Ecosystem trends', 'Embeddable charts'],
+  },
+  {
+    slug: 'commit-carbon',
+    name: 'Commit Carbon',
+    tagline: 'Measure the carbon footprint of AI assisted commits',
+    description: 'The open standard for calculating AI coding emissions at commit granularity. CSRD, SEC, and CDP compatible. Conservative estimates with ranged outputs.',
+    install: 'npx @korext/commit-carbon scan',
+    href: '/commit-carbon',
+    github: 'https://github.com/korext/commit-carbon',
+    npm: 'https://www.npmjs.com/package/@korext/commit-carbon',
+    specLicense: 'CC0 1.0',
+    codeLicense: 'Apache 2.0',
+    version: '1.0.1',
+    color: 'green',
+    icon: (
+      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+      </svg>
+    ),
+    features: ['CSRD/SEC/CDP reports', 'Regional grid intensity', 'Ranged estimates', 'GitHub Action'],
   },
 ];
 
@@ -153,20 +193,36 @@ const colorMap = {
     installBg: 'bg-purple-500/5 border-purple-500/10',
     dot: 'bg-purple-400',
   },
+  cyan: {
+    border: 'border-cyan-500/20 hover:border-cyan-400/40',
+    glow: 'hover:shadow-[0_0_60px_rgba(6,182,212,0.08)]',
+    iconBg: 'bg-cyan-500/10 text-cyan-400',
+    badge: 'bg-cyan-500/10 text-cyan-400 border-cyan-500/20',
+    installBg: 'bg-cyan-500/5 border-cyan-500/10',
+    dot: 'bg-cyan-400',
+  },
+  green: {
+    border: 'border-green-500/20 hover:border-green-400/40',
+    glow: 'hover:shadow-[0_0_60px_rgba(34,197,94,0.08)]',
+    iconBg: 'bg-green-500/10 text-green-400',
+    badge: 'bg-green-500/10 text-green-400 border-green-500/20',
+    installBg: 'bg-green-500/5 border-green-500/10',
+    dot: 'bg-green-400',
+  },
 };
 
 export default function Home() {
   return (
     <div className="relative">
       {/* Hero Section */}
-      <section className="pt-24 pb-20 md:pt-32 md:pb-28">
-        <div className="container mx-auto px-6 max-w-5xl text-center space-y-8">
+      <section className="pt-20 pb-16 md:pt-32 md:pb-28">
+        <div className="container mx-auto px-4 sm:px-6 max-w-5xl text-center space-y-6 md:space-y-8">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/[0.08] bg-white/[0.03] text-xs font-medium text-white/60 tracking-wide">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
             Open Standards for AI Code Governance
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.08]">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.08]">
             <span className="text-white">Open standards for</span>
             <br />
             <span className="text-gradient">AI code transparency</span>
@@ -202,7 +258,7 @@ export default function Home() {
 
       {/* Project Cards */}
       <section id="projects" className="pb-20">
-        <div className="container mx-auto px-6 max-w-5xl space-y-6">
+        <div className="container mx-auto px-4 sm:px-6 max-w-5xl space-y-6">
           {projects.map((project) => {
             const c = colorMap[project.color];
             return (
@@ -212,7 +268,7 @@ export default function Home() {
                 id={`project-${project.slug}`}
                 className={`group block rounded-2xl border ${c.border} bg-white/[0.02] ${c.glow} transition-all duration-300 overflow-hidden`}
               >
-                <div className="p-8 md:p-10">
+                <div className="p-5 sm:p-8 md:p-10">
                   <div className="flex flex-col md:flex-row md:items-start gap-8">
                     {/* Left: Info */}
                     <div className="flex-1 space-y-5">
@@ -221,7 +277,7 @@ export default function Home() {
                           {project.icon}
                         </div>
                         <div>
-                          <h2 className="text-2xl font-bold text-white group-hover:text-white/95 transition-colors">
+                          <h2 className="text-xl sm:text-2xl font-bold text-white group-hover:text-white/95 transition-colors">
                             {project.name}
                           </h2>
                           <p className="text-sm text-white/40 mt-0.5">{project.tagline}</p>
@@ -253,7 +309,7 @@ export default function Home() {
                     </div>
 
                     {/* Right: Install command */}
-                    <div className="md:w-80 flex-shrink-0">
+                    <div className="md:w-72 lg:w-80 flex-shrink-0">
                       <div className={`rounded-xl border ${c.installBg} p-5 space-y-3`}>
                         <p className="text-xs font-semibold uppercase tracking-[0.15em] text-white/30">Quick Start</p>
                         <code className="block text-sm font-mono text-white/80 select-all break-all leading-relaxed">
@@ -277,8 +333,8 @@ export default function Home() {
 
       {/* Why Section */}
       <section className="pb-20">
-        <div className="container mx-auto px-6 max-w-5xl">
-          <div className="rounded-2xl border border-white/[0.06] bg-white/[0.02] p-10 md:p-14 text-center space-y-6">
+        <div className="container mx-auto px-4 sm:px-6 max-w-5xl">
+          <div className="rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 sm:p-10 md:p-14 text-center space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-white">The gap in open source</h2>
             <p className="text-lg text-white/50 max-w-2xl mx-auto leading-relaxed">
               Open source licenses were designed when all code was human written. When AI tools assist or generate code, downstream consumers have no way to know what portions are AI assisted, which tools were used, or whether the code was governed. These standards change that.
@@ -303,42 +359,63 @@ export default function Home() {
 
       {/* How They Connect */}
       <section className="pb-20">
-        <div className="container mx-auto px-6 max-w-5xl text-center space-y-10">
+        <div className="container mx-auto px-4 sm:px-6 max-w-5xl text-center space-y-10">
           <div className="space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold text-white">How they work together</h2>
-            <p className="text-white/40 max-w-xl mx-auto">Five standards. One ecosystem. Complete AI code transparency.</p>
+            <p className="text-white/40 max-w-xl mx-auto">Eight open standards. One ecosystem. Complete AI code governance.</p>
           </div>
 
-          <div className="grid md:grid-cols-6 gap-px bg-white/[0.04] rounded-2xl overflow-hidden">
-            <div className="bg-[#0d0e1a] p-8 space-y-3">
-              <div className="text-4xl font-bold text-blue-400/60">1</div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="rounded-xl border border-blue-500/10 bg-white/[0.02] p-6 text-left space-y-3">
+              <div className="text-3xl font-bold text-blue-400/50">1</div>
               <h3 className="text-lg font-semibold text-white">Track</h3>
               <p className="text-sm text-white/40 leading-relaxed">AI Attestation scans your git history and produces a machine readable YAML report of AI tool usage.</p>
             </div>
-            <div className="bg-[#0d0e1a] p-8 space-y-3">
-              <div className="text-4xl font-bold text-violet-400/60">2</div>
+            <div className="rounded-xl border border-violet-500/10 bg-white/[0.02] p-6 text-left space-y-3">
+              <div className="text-3xl font-bold text-violet-400/50">2</div>
               <h3 className="text-lg font-semibold text-white">Declare</h3>
               <p className="text-sm text-white/40 leading-relaxed">AI License Notice reads the attestation and generates a standardized notice declaring AI provenance.</p>
             </div>
-            <div className="bg-[#0d0e1a] p-8 space-y-3">
-              <div className="text-4xl font-bold text-emerald-400/60">3</div>
+            <div className="rounded-xl border border-emerald-500/10 bg-white/[0.02] p-6 text-left space-y-3">
+              <div className="text-3xl font-bold text-emerald-400/50">3</div>
               <h3 className="text-lg font-semibold text-white">Scan</h3>
               <p className="text-sm text-white/40 leading-relaxed">Supply Chain Attestation aggregates AI provenance across your entire dependency tree. Fourteen ecosystems.</p>
             </div>
-            <div className="bg-[#0d0e1a] p-8 space-y-3">
-              <div className="text-4xl font-bold text-red-400/60">4</div>
+            <div className="rounded-xl border border-red-500/10 bg-white/[0.02] p-6 text-left space-y-3">
+              <div className="text-3xl font-bold text-red-400/50">4</div>
               <h3 className="text-lg font-semibold text-white">Learn</h3>
-              <p className="text-sm text-white/40 leading-relaxed">AI Incident Registry documents what happens when AI code fails. Browse incidents, subscribe to feeds, prevent repeats.</p>
+              <p className="text-sm text-white/40 leading-relaxed">AI Incident Registry documents what happens when AI code fails. Browse incidents, subscribe to feeds.</p>
             </div>
-            <div className="bg-[#0d0e1a] p-8 space-y-3">
-              <div className="text-4xl font-bold text-purple-400/60">5</div>
+            <div className="rounded-xl border border-purple-500/10 bg-white/[0.02] p-6 text-left space-y-3">
+              <div className="text-3xl font-bold text-purple-400/50">5</div>
               <h3 className="text-lg font-semibold text-white">Prevent</h3>
-              <p className="text-sm text-white/40 leading-relaxed">AI Regression Database catalogs repeatable patterns AI tools get wrong proactively before they become incidents.</p>
+              <p className="text-sm text-white/40 leading-relaxed">AI Regression Database catalogs repeatable patterns AI tools get wrong proactively before incidents.</p>
             </div>
-            <div className="bg-[#0d0e1a] p-8 space-y-3">
-              <div className="text-4xl font-bold text-white/20">6</div>
-              <h3 className="text-lg font-semibold text-white">Govern</h3>
-              <p className="text-sm text-white/40 leading-relaxed">Connect Korext for governance scanning, policy enforcement, and cryptographic proof bundles.</p>
+            <div className="rounded-xl border border-cyan-500/10 bg-white/[0.02] p-6 text-left space-y-3">
+              <div className="text-3xl font-bold text-cyan-400/50">6</div>
+              <h3 className="text-lg font-semibold text-white">Observe</h3>
+              <p className="text-sm text-white/40 leading-relaxed">AI Code Radar aggregates metrics across the ecosystem into a live public pulse of adoption patterns.</p>
+            </div>
+            <div className="rounded-xl border border-green-500/10 bg-white/[0.02] p-6 text-left space-y-3">
+              <div className="text-3xl font-bold text-green-400/50">7</div>
+              <h3 className="text-lg font-semibold text-white">Account</h3>
+              <p className="text-sm text-white/40 leading-relaxed">Commit Carbon measures AI coding emissions at commit level. CSRD, SEC, and CDP compatible disclosure.</p>
+            </div>
+            <div className="rounded-xl border border-white/[0.06] bg-white/[0.02] p-6 text-left space-y-3 group hover:border-violet-500/20 transition-all">
+              <div className="text-3xl font-bold text-violet-400/40">8</div>
+              <h3 className="text-lg font-semibold text-white/80">Govern</h3>
+              <p className="text-sm text-white/50 leading-relaxed">Enterprise governance layer. Combine all standards into a unified AI code policy for your organization.</p>
+              <a
+                href="https://www.korext.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-violet-400/70 hover:text-violet-300 transition-colors mt-1"
+              >
+                Learn more
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -346,10 +423,10 @@ export default function Home() {
 
       {/* CTA */}
       <section className="pb-20">
-        <div className="container mx-auto px-6 max-w-3xl text-center space-y-8">
+        <div className="container mx-auto px-4 sm:px-6 max-w-3xl text-center space-y-6 md:space-y-8">
           <h2 className="text-3xl md:text-4xl font-bold text-white">Start tracking your AI code</h2>
           <p className="text-white/50 max-w-lg mx-auto">One command. Zero configuration. Works with every language, every framework, every AI coding tool.</p>
-          <code className="inline-block px-8 py-4 rounded-xl bg-white/[0.04] border border-white/[0.08] text-lg font-mono text-white/80 select-all">
+          <code className="inline-block px-4 sm:px-8 py-3 sm:py-4 rounded-xl bg-white/[0.04] border border-white/[0.08] text-sm sm:text-lg font-mono text-white/80 select-all break-all">
             npx @korext/ai-attestation init
           </code>
         </div>
