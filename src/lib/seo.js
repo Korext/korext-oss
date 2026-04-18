@@ -4,7 +4,7 @@
 
 const SITE_NAME = 'Korext Open Source';
 const SITE_URL = 'https://oss.korext.com';
-const OG_IMAGE = `${SITE_URL}/og-image.png`;
+const OG_IMAGE = `${SITE_URL}/opengraph-image`;
 
 export function buildMetadata({
   title,

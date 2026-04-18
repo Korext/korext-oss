@@ -21,7 +21,7 @@ const projects = [
     npm: 'https://www.npmjs.com/package/@korext/ai-attestation',
     specLicense: 'CC0 1.0',
     codeLicense: 'Apache 2.0',
-    version: '1.0.2',
+    version: '1.0.4',
     color: 'blue',
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -41,7 +41,7 @@ const projects = [
     npm: 'https://www.npmjs.com/package/@korext/ai-license',
     specLicense: 'CC0 1.0',
     codeLicense: 'Apache 2.0',
-    version: '1.0.1',
+    version: '1.0.3',
     color: 'violet',
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">

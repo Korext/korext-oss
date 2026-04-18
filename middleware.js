@@ -128,5 +128,5 @@ export function middleware(request) {
 }
 
 export const config = {
-  matcher: ['/((?!_next/image|favicon.ico|favicon.png|logo.png|apple-touch-icon.png|korext-logo-1024.png|og-image.png|team|api/supply-chain/badge|api/badge|api/ai-license-badge).*)'],
+  matcher: ['/((?!_next/image|favicon.ico|favicon.png|logo.png|apple-touch-icon.png|korext-logo-1024.png|og-image.png|opengraph-image|twitter-image|team|api/supply-chain/badge|api/badge|api/ai-license-badge).*)'],
 };

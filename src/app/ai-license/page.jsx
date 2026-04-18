@@ -32,7 +32,7 @@ export default function AiLicensePage() {
         description: 'Standardized notice for declaring AI provenance in any open source project.',
         url: 'https://oss.korext.com/ai-license',
         downloadUrl: 'https://www.npmjs.com/package/@korext/ai-license',
-        version: '1.0.1',
+        version: '1.0.3',
         license: 'https://opensource.org/licenses/Apache-2.0',
         applicationCategory: 'DeveloperApplication',
       })} />
