@@ -82,7 +82,7 @@ ai:
         description: 'Open standard for tracking AI generated code in any repository.',
         url: 'https://oss.korext.com/ai-attestation',
         downloadUrl: 'https://www.npmjs.com/package/@korext/ai-attestation',
-        version: '1.0.4',
+        version: '1.0.5',
         license: 'https://opensource.org/licenses/Apache-2.0',
         applicationCategory: 'DeveloperApplication',
       })} />

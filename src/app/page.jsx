@@ -21,7 +21,7 @@ const projects = [
     npm: 'https://www.npmjs.com/package/@korext/ai-attestation',
     specLicense: 'CC0 1.0',
     codeLicense: 'Apache 2.0',
-    version: '1.0.4',
+    version: '1.0.5',
     color: 'blue',
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -61,7 +61,7 @@ const projects = [
     npm: 'https://www.npmjs.com/package/@korext/supply-check',
     specLicense: 'CC0 1.0',
     codeLicense: 'Apache 2.0',
-    version: '1.1.1',
+    version: '1.1.2',
     color: 'emerald',
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -81,7 +81,7 @@ const projects = [
     npm: 'https://www.npmjs.com/package/@korext/incident-report',
     specLicense: 'CC0 1.0',
     codeLicense: 'Apache 2.0',
-    version: '1.0.0',
+    version: '1.0.1',
     color: 'red',
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -101,7 +101,7 @@ const projects = [
     npm: 'https://www.npmjs.com/package/@korext/regression-submit',
     specLicense: 'CC0 1.0',
     codeLicense: 'Apache 2.0',
-    version: '1.0.4',
+    version: '1.0.5',
     color: 'purple',
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -121,7 +121,7 @@ const projects = [
     npm: 'https://www.npmjs.com/package/@korext/radar-data',
     specLicense: 'CC0 1.0',
     codeLicense: 'Apache 2.0',
-    version: '1.0.0',
+    version: '1.0.1',
     color: 'cyan',
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -141,7 +141,7 @@ const projects = [
     npm: 'https://www.npmjs.com/package/@korext/commit-carbon',
     specLicense: 'CC0 1.0',
     codeLicense: 'Apache 2.0',
-    version: '1.0.2',
+    version: '1.0.3',
     color: 'green',
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
