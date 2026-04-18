@@ -101,7 +101,7 @@ const projects = [
     npm: 'https://www.npmjs.com/package/@korext/regression-submit',
     specLicense: 'CC0 1.0',
     codeLicense: 'Apache 2.0',
-    version: '1.0.3',
+    version: '1.0.4',
     color: 'purple',
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -141,7 +141,7 @@ const projects = [
     npm: 'https://www.npmjs.com/package/@korext/commit-carbon',
     specLicense: 'CC0 1.0',
     codeLicense: 'Apache 2.0',
-    version: '1.0.1',
+    version: '1.0.2',
     color: 'green',
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
