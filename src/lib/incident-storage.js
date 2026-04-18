@@ -35,10 +35,16 @@ export class IncidentStorage {
     }
     
     // Check examples directory for seed data
-    const examplesDir = path.join(process.cwd(), '../ai-incident-registry/examples');
-    const exampleFile = fs.readdirSync(examplesDir).find(f => f.includes(id));
-    if (exampleFile) {
-       return yaml.load(fs.readFileSync(path.join(examplesDir, exampleFile), 'utf8'));
+    try {
+      const examplesDir = path.join(process.cwd(), '../ai-incident-registry/examples');
+      if (fs.existsSync(examplesDir)) {
+        const exampleFile = fs.readdirSync(examplesDir).find(f => f.includes(id));
+        if (exampleFile) {
+          return yaml.load(fs.readFileSync(path.join(examplesDir, exampleFile), 'utf8'));
+        }
+      }
+    } catch {
+      // Examples directory not available (e.g. production container)
     }
     return null;
   }
