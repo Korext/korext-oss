@@ -61,7 +61,7 @@ const projects = [
     npm: 'https://www.npmjs.com/package/@korext/supply-check',
     specLicense: 'CC0 1.0',
     codeLicense: 'Apache 2.0',
-    version: '1.1.0',
+    version: '1.1.1',
     color: 'emerald',
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">

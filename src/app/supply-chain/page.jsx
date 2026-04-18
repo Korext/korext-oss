@@ -59,7 +59,7 @@ Report: .supply-chain-attestation.yaml`;
         description: 'AI provenance scanner for your software supply chain. Fourteen ecosystems, SBOM integration, private registry support.',
         url: 'https://oss.korext.com/supply-chain',
         downloadUrl: 'https://www.npmjs.com/package/@korext/supply-check',
-        version: '1.1.0',
+        version: '1.1.1',
         license: 'https://opensource.org/licenses/Apache-2.0',
         applicationCategory: 'DeveloperApplication',
       })} />
