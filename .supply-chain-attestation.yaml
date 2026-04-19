@@ -1,0 +1,2588 @@
+schema: https://oss.korext.com/supply-chain/schema
+version: '1.0'
+project:
+  name: korext-oss
+  path: /Users/tombruno/Downloads/ai-attestation/korext-oss
+  manifest: detected
+  ecosystem: npm
+generated: '2026-04-19T06:47:50.634Z'
+dependencies:
+  total: 427
+  scanned: 427
+  with_attestation: 0
+  without_attestation: 427
+  coverage_percentage: 0
+ai_composition:
+  weighted_percentage: 0
+  aggregate_assisted_commits: 0
+  aggregate_total_commits: 0
+governance_tiers:
+  attested: 0
+  scanned: 0
+  ungoverned: 0
+  no_attestation: 427
+tools_detected: []
+high_risk_dependencies: []
+dependencies_detail:
+  - name: '@alloc/quick-lru'
+    version: 5.2.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@babel/code-frame'
+    version: 7.29.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@babel/compat-data'
+    version: 7.29.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@babel/core'
+    version: 7.29.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@babel/generator'
+    version: 7.29.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@babel/helper-compilation-targets'
+    version: 7.28.6
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@babel/helper-globals'
+    version: 7.28.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@babel/helper-module-imports'
+    version: 7.28.6
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@babel/helper-module-transforms'
+    version: 7.28.6
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@babel/helper-string-parser'
+    version: 7.27.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@babel/helper-validator-identifier'
+    version: 7.28.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@babel/helper-validator-option'
+    version: 7.27.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@babel/helpers'
+    version: 7.29.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@babel/parser'
+    version: 7.29.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@babel/template'
+    version: 7.28.6
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@babel/traverse'
+    version: 7.29.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@babel/types'
+    version: 7.29.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@emnapi/core'
+    version: 1.9.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@emnapi/runtime'
+    version: 1.9.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@emnapi/wasi-threads'
+    version: 1.2.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@eslint-community/eslint-utils'
+    version: 4.9.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: eslint-visitor-keys
+    version: 3.4.3
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@eslint-community/regexpp'
+    version: 4.12.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@eslint/config-array'
+    version: 0.21.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@eslint/config-helpers'
+    version: 0.4.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@eslint/core'
+    version: 0.17.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@eslint/eslintrc'
+    version: 3.3.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@eslint/js'
+    version: 9.39.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@eslint/object-schema'
+    version: 2.1.7
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@eslint/plugin-kit'
+    version: 0.4.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@humanfs/core'
+    version: 0.19.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@humanfs/node'
+    version: 0.16.7
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@humanwhocodes/module-importer'
+    version: 1.0.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@humanwhocodes/retry'
+    version: 0.4.3
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@img/colour'
+    version: 1.1.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@img/sharp-darwin-arm64'
+    version: 0.34.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@img/sharp-darwin-x64'
+    version: 0.34.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@img/sharp-libvips-darwin-arm64'
+    version: 1.2.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@img/sharp-libvips-darwin-x64'
+    version: 1.2.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@img/sharp-libvips-linux-arm'
+    version: 1.2.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@img/sharp-libvips-linux-arm64'
+    version: 1.2.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@img/sharp-libvips-linux-ppc64'
+    version: 1.2.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@img/sharp-libvips-linux-riscv64'
+    version: 1.2.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@img/sharp-libvips-linux-s390x'
+    version: 1.2.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@img/sharp-libvips-linux-x64'
+    version: 1.2.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@img/sharp-libvips-linuxmusl-arm64'
+    version: 1.2.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@img/sharp-libvips-linuxmusl-x64'
+    version: 1.2.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@img/sharp-linux-arm'
+    version: 0.34.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@img/sharp-linux-arm64'
+    version: 0.34.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@img/sharp-linux-ppc64'
+    version: 0.34.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@img/sharp-linux-riscv64'
+    version: 0.34.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@img/sharp-linux-s390x'
+    version: 0.34.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@img/sharp-linux-x64'
+    version: 0.34.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@img/sharp-linuxmusl-arm64'
+    version: 0.34.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@img/sharp-linuxmusl-x64'
+    version: 0.34.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@img/sharp-wasm32'
+    version: 0.34.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@img/sharp-win32-arm64'
+    version: 0.34.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@img/sharp-win32-ia32'
+    version: 0.34.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@img/sharp-win32-x64'
+    version: 0.34.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@jridgewell/gen-mapping'
+    version: 0.3.13
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@jridgewell/remapping'
+    version: 2.3.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@jridgewell/resolve-uri'
+    version: 3.1.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@jridgewell/sourcemap-codec'
+    version: 1.5.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@jridgewell/trace-mapping'
+    version: 0.3.31
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@kurkle/color'
+    version: 0.3.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@napi-rs/wasm-runtime'
+    version: 0.2.12
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@next/env'
+    version: 16.2.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@next/eslint-plugin-next'
+    version: 16.2.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@next/swc-darwin-arm64'
+    version: 16.2.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@next/swc-darwin-x64'
+    version: 16.2.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@next/swc-linux-arm64-gnu'
+    version: 16.2.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@next/swc-linux-arm64-musl'
+    version: 16.2.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@next/swc-linux-x64-gnu'
+    version: 16.2.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@next/swc-linux-x64-musl'
+    version: 16.2.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@next/swc-win32-arm64-msvc'
+    version: 16.2.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@next/swc-win32-x64-msvc'
+    version: 16.2.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@nodelib/fs.scandir'
+    version: 2.1.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@nodelib/fs.stat'
+    version: 2.0.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@nodelib/fs.walk'
+    version: 1.2.8
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@nolyfill/is-core-module'
+    version: 1.0.39
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@rtsao/scc'
+    version: 1.1.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@swc/helpers'
+    version: 0.5.15
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@tailwindcss/node'
+    version: 4.2.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@tailwindcss/oxide'
+    version: 4.2.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@tailwindcss/oxide-android-arm64'
+    version: 4.2.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@tailwindcss/oxide-darwin-arm64'
+    version: 4.2.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@tailwindcss/oxide-darwin-x64'
+    version: 4.2.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@tailwindcss/oxide-freebsd-x64'
+    version: 4.2.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@tailwindcss/oxide-linux-arm-gnueabihf'
+    version: 4.2.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@tailwindcss/oxide-linux-arm64-gnu'
+    version: 4.2.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@tailwindcss/oxide-linux-arm64-musl'
+    version: 4.2.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@tailwindcss/oxide-linux-x64-gnu'
+    version: 4.2.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@tailwindcss/oxide-linux-x64-musl'
+    version: 4.2.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@tailwindcss/oxide-wasm32-wasi'
+    version: 4.2.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@tailwindcss/oxide-win32-arm64-msvc'
+    version: 4.2.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@tailwindcss/oxide-win32-x64-msvc'
+    version: 4.2.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@tailwindcss/postcss'
+    version: 4.2.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@tybys/wasm-util'
+    version: 0.10.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@types/estree'
+    version: 1.0.8
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@types/json-schema'
+    version: 7.0.15
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@types/json5'
+    version: 0.0.29
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@typescript-eslint/eslint-plugin'
+    version: 8.58.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: ignore
+    version: 7.0.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@typescript-eslint/parser'
+    version: 8.58.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@typescript-eslint/project-service'
+    version: 8.58.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@typescript-eslint/scope-manager'
+    version: 8.58.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@typescript-eslint/tsconfig-utils'
+    version: 8.58.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@typescript-eslint/type-utils'
+    version: 8.58.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@typescript-eslint/types'
+    version: 8.58.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@typescript-eslint/typescript-estree'
+    version: 8.58.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: balanced-match
+    version: 4.0.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: brace-expansion
+    version: 5.0.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: minimatch
+    version: 10.2.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: semver
+    version: 7.7.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@typescript-eslint/utils'
+    version: 8.58.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@typescript-eslint/visitor-keys'
+    version: 8.58.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: eslint-visitor-keys
+    version: 5.0.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@unrs/resolver-binding-android-arm-eabi'
+    version: 1.11.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@unrs/resolver-binding-android-arm64'
+    version: 1.11.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@unrs/resolver-binding-darwin-arm64'
+    version: 1.11.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@unrs/resolver-binding-darwin-x64'
+    version: 1.11.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@unrs/resolver-binding-freebsd-x64'
+    version: 1.11.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@unrs/resolver-binding-linux-arm-gnueabihf'
+    version: 1.11.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@unrs/resolver-binding-linux-arm-musleabihf'
+    version: 1.11.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@unrs/resolver-binding-linux-arm64-gnu'
+    version: 1.11.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@unrs/resolver-binding-linux-arm64-musl'
+    version: 1.11.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@unrs/resolver-binding-linux-ppc64-gnu'
+    version: 1.11.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@unrs/resolver-binding-linux-riscv64-gnu'
+    version: 1.11.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@unrs/resolver-binding-linux-riscv64-musl'
+    version: 1.11.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@unrs/resolver-binding-linux-s390x-gnu'
+    version: 1.11.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@unrs/resolver-binding-linux-x64-gnu'
+    version: 1.11.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@unrs/resolver-binding-linux-x64-musl'
+    version: 1.11.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@unrs/resolver-binding-wasm32-wasi'
+    version: 1.11.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@unrs/resolver-binding-win32-arm64-msvc'
+    version: 1.11.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@unrs/resolver-binding-win32-ia32-msvc'
+    version: 1.11.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: '@unrs/resolver-binding-win32-x64-msvc'
+    version: 1.11.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: acorn
+    version: 8.16.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: acorn-jsx
+    version: 5.3.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: ajv
+    version: 6.14.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: ansi-styles
+    version: 4.3.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: argparse
+    version: 2.0.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: aria-query
+    version: 5.3.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: array-buffer-byte-length
+    version: 1.0.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: array-includes
+    version: 3.1.9
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: array.prototype.findlast
+    version: 1.2.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: array.prototype.findlastindex
+    version: 1.2.6
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: array.prototype.flat
+    version: 1.3.3
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: array.prototype.flatmap
+    version: 1.3.3
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: array.prototype.tosorted
+    version: 1.1.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: arraybuffer.prototype.slice
+    version: 1.0.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: ast-types-flow
+    version: 0.0.8
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: async-function
+    version: 1.0.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: available-typed-arrays
+    version: 1.0.7
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: axe-core
+    version: 4.11.3
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: axobject-query
+    version: 4.1.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: balanced-match
+    version: 1.0.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: baseline-browser-mapping
+    version: 2.10.19
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: brace-expansion
+    version: 1.1.14
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: braces
+    version: 3.0.3
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: browserslist
+    version: 4.28.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: call-bind
+    version: 1.0.9
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: call-bind-apply-helpers
+    version: 1.0.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: call-bound
+    version: 1.0.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: callsites
+    version: 3.1.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: caniuse-lite
+    version: 1.0.30001788
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: chalk
+    version: 4.1.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: chart.js
+    version: 4.5.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: client-only
+    version: 0.0.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: color-convert
+    version: 2.0.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: color-name
+    version: 1.1.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: concat-map
+    version: 0.0.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: convert-source-map
+    version: 2.0.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: cross-spawn
+    version: 7.0.6
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: damerau-levenshtein
+    version: 1.0.8
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: data-view-buffer
+    version: 1.0.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: data-view-byte-length
+    version: 1.0.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: data-view-byte-offset
+    version: 1.0.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: debug
+    version: 4.4.3
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: deep-is
+    version: 0.1.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: define-data-property
+    version: 1.1.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: define-properties
+    version: 1.2.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: detect-libc
+    version: 2.1.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: doctrine
+    version: 2.1.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: dunder-proto
+    version: 1.0.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: electron-to-chromium
+    version: 1.5.338
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: emoji-regex
+    version: 9.2.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: enhanced-resolve
+    version: 5.20.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: es-abstract
+    version: 1.24.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: es-define-property
+    version: 1.0.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: es-errors
+    version: 1.3.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: es-iterator-helpers
+    version: 1.3.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: es-object-atoms
+    version: 1.1.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: es-set-tostringtag
+    version: 2.1.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: es-shim-unscopables
+    version: 1.1.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: es-to-primitive
+    version: 1.3.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: escalade
+    version: 3.2.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: escape-string-regexp
+    version: 4.0.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: eslint
+    version: 9.39.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: eslint-config-next
+    version: 16.2.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: globals
+    version: 16.4.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: eslint-import-resolver-node
+    version: 0.3.10
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: debug
+    version: 3.2.7
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: eslint-import-resolver-typescript
+    version: 3.10.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: eslint-module-utils
+    version: 2.12.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: debug
+    version: 3.2.7
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: eslint-plugin-import
+    version: 2.32.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: debug
+    version: 3.2.7
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: eslint-plugin-jsx-a11y
+    version: 6.10.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: eslint-plugin-react
+    version: 7.37.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: eslint-plugin-react-hooks
+    version: 7.0.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: eslint-scope
+    version: 8.4.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: eslint-visitor-keys
+    version: 4.2.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: espree
+    version: 10.4.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: esquery
+    version: 1.7.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: esrecurse
+    version: 4.3.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: estraverse
+    version: 5.3.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: esutils
+    version: 2.0.3
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: fast-deep-equal
+    version: 3.1.3
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: fast-glob
+    version: 3.3.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: glob-parent
+    version: 5.1.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: fast-json-stable-stringify
+    version: 2.1.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: fast-levenshtein
+    version: 2.0.6
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: fastq
+    version: 1.20.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: file-entry-cache
+    version: 8.0.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: fill-range
+    version: 7.1.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: find-up
+    version: 5.0.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: flat-cache
+    version: 4.0.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: flatted
+    version: 3.4.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: for-each
+    version: 0.3.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: function-bind
+    version: 1.1.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: function.prototype.name
+    version: 1.1.8
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: functions-have-names
+    version: 1.2.3
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: generator-function
+    version: 2.0.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: gensync
+    version: 1.0.0-beta.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: get-intrinsic
+    version: 1.3.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: get-proto
+    version: 1.0.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: get-symbol-description
+    version: 1.1.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: get-tsconfig
+    version: 4.14.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: glob-parent
+    version: 6.0.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: globals
+    version: 14.0.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: globalthis
+    version: 1.0.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: gopd
+    version: 1.2.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: graceful-fs
+    version: 4.2.11
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: has-bigints
+    version: 1.1.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: has-flag
+    version: 4.0.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: has-property-descriptors
+    version: 1.0.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: has-proto
+    version: 1.2.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: has-symbols
+    version: 1.1.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: has-tostringtag
+    version: 1.0.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: hasown
+    version: 2.0.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: hermes-estree
+    version: 0.25.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: hermes-parser
+    version: 0.25.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: ignore
+    version: 5.3.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: import-fresh
+    version: 3.3.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: imurmurhash
+    version: 0.1.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: internal-slot
+    version: 1.1.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-array-buffer
+    version: 3.0.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-async-function
+    version: 2.1.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-bigint
+    version: 1.1.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-boolean-object
+    version: 1.2.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-bun-module
+    version: 2.0.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: semver
+    version: 7.7.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-callable
+    version: 1.2.7
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-core-module
+    version: 2.16.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-data-view
+    version: 1.0.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-date-object
+    version: 1.1.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-extglob
+    version: 2.1.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-finalizationregistry
+    version: 1.1.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-generator-function
+    version: 1.1.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-glob
+    version: 4.0.3
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-map
+    version: 2.0.3
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-negative-zero
+    version: 2.0.3
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-number
+    version: 7.0.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-number-object
+    version: 1.1.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-regex
+    version: 1.2.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-set
+    version: 2.0.3
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-shared-array-buffer
+    version: 1.0.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-string
+    version: 1.1.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-symbol
+    version: 1.1.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-typed-array
+    version: 1.1.15
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-weakmap
+    version: 2.0.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-weakref
+    version: 1.1.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: is-weakset
+    version: 2.0.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: isarray
+    version: 2.0.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: isexe
+    version: 2.0.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: iterator.prototype
+    version: 1.1.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: jiti
+    version: 2.6.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: js-tokens
+    version: 4.0.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: js-yaml
+    version: 4.1.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: jsesc
+    version: 3.1.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: json-buffer
+    version: 3.0.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: json-schema-traverse
+    version: 0.4.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: json-stable-stringify-without-jsonify
+    version: 1.0.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: json5
+    version: 2.2.3
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: jsx-ast-utils
+    version: 3.3.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: keyv
+    version: 4.5.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: language-subtag-registry
+    version: 0.3.23
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: language-tags
+    version: 1.0.9
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: levn
+    version: 0.4.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: lightningcss
+    version: 1.32.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: lightningcss-android-arm64
+    version: 1.32.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: lightningcss-darwin-arm64
+    version: 1.32.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: lightningcss-darwin-x64
+    version: 1.32.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: lightningcss-freebsd-x64
+    version: 1.32.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: lightningcss-linux-arm-gnueabihf
+    version: 1.32.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: lightningcss-linux-arm64-gnu
+    version: 1.32.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: lightningcss-linux-arm64-musl
+    version: 1.32.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: lightningcss-linux-x64-gnu
+    version: 1.32.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: lightningcss-linux-x64-musl
+    version: 1.32.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: lightningcss-win32-arm64-msvc
+    version: 1.32.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: lightningcss-win32-x64-msvc
+    version: 1.32.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: locate-path
+    version: 6.0.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: lodash.merge
+    version: 4.6.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: loose-envify
+    version: 1.4.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: lru-cache
+    version: 5.1.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: magic-string
+    version: 0.30.21
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: math-intrinsics
+    version: 1.1.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: merge2
+    version: 1.4.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: micromatch
+    version: 4.0.8
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: minimatch
+    version: 3.1.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: minimist
+    version: 1.2.8
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: ms
+    version: 2.1.3
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: nanoid
+    version: 3.3.11
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: napi-postinstall
+    version: 0.3.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: natural-compare
+    version: 1.4.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: next
+    version: 16.2.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: postcss
+    version: 8.4.31
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: node-exports-info
+    version: 1.6.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: node-releases
+    version: 2.0.37
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: nodemailer
+    version: 8.0.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: object-assign
+    version: 4.1.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: object-inspect
+    version: 1.13.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: object-keys
+    version: 1.1.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: object.assign
+    version: 4.1.7
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: object.entries
+    version: 1.1.9
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: object.fromentries
+    version: 2.0.8
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: object.groupby
+    version: 1.0.3
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: object.values
+    version: 1.2.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: optionator
+    version: 0.9.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: own-keys
+    version: 1.0.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: p-limit
+    version: 3.1.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: p-locate
+    version: 5.0.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: parent-module
+    version: 1.0.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: path-exists
+    version: 4.0.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: path-key
+    version: 3.1.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: path-parse
+    version: 1.0.7
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: picocolors
+    version: 1.1.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: picomatch
+    version: 2.3.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: possible-typed-array-names
+    version: 1.1.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: postcss
+    version: 8.5.10
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: prelude-ls
+    version: 1.2.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: prop-types
+    version: 15.8.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: punycode
+    version: 2.3.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: queue-microtask
+    version: 1.2.3
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: react
+    version: 19.2.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: react-chartjs-2
+    version: 5.3.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: react-dom
+    version: 19.2.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: react-is
+    version: 16.13.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: reflect.getprototypeof
+    version: 1.0.10
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: regexp.prototype.flags
+    version: 1.5.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: resolve
+    version: 2.0.0-next.6
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: resolve-from
+    version: 4.0.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: resolve-pkg-maps
+    version: 1.0.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: reusify
+    version: 1.1.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: run-parallel
+    version: 1.2.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: safe-array-concat
+    version: 1.1.3
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: safe-push-apply
+    version: 1.0.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: safe-regex-test
+    version: 1.1.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: scheduler
+    version: 0.27.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: semver
+    version: 6.3.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: server-only
+    version: 0.0.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: set-function-length
+    version: 1.2.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: set-function-name
+    version: 2.0.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: set-proto
+    version: 1.0.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: sharp
+    version: 0.34.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: semver
+    version: 7.7.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: shebang-command
+    version: 2.0.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: shebang-regex
+    version: 3.0.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: side-channel
+    version: 1.1.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: side-channel-list
+    version: 1.0.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: side-channel-map
+    version: 1.0.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: side-channel-weakmap
+    version: 1.0.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: source-map-js
+    version: 1.2.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: stable-hash
+    version: 0.0.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: stop-iteration-iterator
+    version: 1.1.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: string.prototype.includes
+    version: 2.0.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: string.prototype.matchall
+    version: 4.0.12
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: string.prototype.repeat
+    version: 1.0.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: string.prototype.trim
+    version: 1.2.10
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: string.prototype.trimend
+    version: 1.0.9
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: string.prototype.trimstart
+    version: 1.0.8
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: strip-bom
+    version: 3.0.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: strip-json-comments
+    version: 3.1.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: styled-jsx
+    version: 5.1.6
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: supports-color
+    version: 7.2.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: supports-preserve-symlinks-flag
+    version: 1.0.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: tailwindcss
+    version: 4.2.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: tapable
+    version: 2.3.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: tinyglobby
+    version: 0.2.16
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: fdir
+    version: 6.5.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: picomatch
+    version: 4.0.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: to-regex-range
+    version: 5.0.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: ts-api-utils
+    version: 2.5.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: tsconfig-paths
+    version: 3.15.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: json5
+    version: 1.0.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: tslib
+    version: 2.8.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: type-check
+    version: 0.4.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: typed-array-buffer
+    version: 1.0.3
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: typed-array-byte-length
+    version: 1.0.3
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: typed-array-byte-offset
+    version: 1.0.4
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: typed-array-length
+    version: 1.0.7
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: typescript
+    version: 6.0.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: typescript-eslint
+    version: 8.58.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: unbox-primitive
+    version: 1.1.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: unrs-resolver
+    version: 1.11.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: update-browserslist-db
+    version: 1.2.3
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: uri-js
+    version: 4.4.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: which
+    version: 2.0.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: which-boxed-primitive
+    version: 1.1.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: which-builtin-type
+    version: 1.2.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: which-collection
+    version: 1.0.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: which-typed-array
+    version: 1.1.20
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: word-wrap
+    version: 1.2.5
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: yallist
+    version: 3.1.1
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: yocto-queue
+    version: 0.1.0
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: zod
+    version: 4.3.6
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
+  - name: zod-validation-error
+    version: 4.0.2
+    ecosystem: npm
+    attestation_source: none
+    ai_percentage: 0
+    governance_tier: NO_ATTESTATION
