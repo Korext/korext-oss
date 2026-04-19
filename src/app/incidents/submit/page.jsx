@@ -168,7 +168,16 @@ export default function SubmitIncident() {
           </>}
         </div>
 
-        <div className="flex justify-between mt-8">
+        <p className="text-xs text-white/35 mt-6 leading-relaxed max-w-xl">
+          By submitting this report, you agree to the processing of the
+          data you provide as described in our{' '}
+          <Link href="/privacy" className="text-violet-400/70 hover:text-violet-300 underline underline-offset-2 decoration-violet-400/30">
+            Privacy Policy
+          </Link>.
+          Reporter information is optional. Anonymous submissions are accepted.
+        </p>
+
+        <div className="flex justify-between mt-6">
           {step > 1 ? <button onClick={() => setStep(step-1)} className="px-6 py-3 rounded-xl bg-white/[0.04] border border-white/[0.08] text-white hover:bg-white/[0.08] transition-all">Back</button> : <div />}
           {step < 7 ? (
             <button onClick={() => setStep(step+1)} className="px-8 py-3 rounded-xl bg-violet-600 hover:bg-violet-500 text-white font-semibold transition-all">Next</button>

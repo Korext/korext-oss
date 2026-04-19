@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import GlobalBackground from '@/components/GlobalBackground';
+import ConsentBanner from '@/components/ConsentBanner';
 import { organizationSchema, webSiteSchema, JsonLd } from '@/lib/schema';
 
 const inter = Inter({ subsets: ['latin'], display: 'swap' });
@@ -68,6 +69,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <Footer />
+        <ConsentBanner />
       </body>
     </html>
   );

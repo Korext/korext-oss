@@ -39,7 +39,15 @@ export default function SubmissionsForm() {
                </select>
             </div>
 
-            <div className="pt-6">
+            <div className="pt-4">
+               <p className="text-xs text-white/35 leading-relaxed mb-4">
+                 By submitting this pattern, you agree to the processing of the
+                 data you provide as described in our{' '}
+                 <Link href="/privacy" className="text-violet-400/70 hover:text-violet-300 underline underline-offset-2 decoration-violet-400/30">
+                   Privacy Policy
+                 </Link>.
+                 Contributor information is optional. Anonymous submissions are accepted.
+               </p>
                <button type="button" className="px-6 py-3 bg-purple-600 hover:bg-purple-500 rounded-xl text-white font-medium transition-colors text-sm">Next Step →</button>
             </div>
           </form>

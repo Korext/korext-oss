@@ -23,5 +23,7 @@ export default function sitemap() {
     { url: `${base}/commit-carbon/methodology`, lastModified: now, priority: 0.8, changeFrequency: 'monthly' },
     { url: `${base}/commit-carbon/reports`, lastModified: now, priority: 0.8, changeFrequency: 'monthly' },
     { url: `${base}/team`, lastModified: now, priority: 0.7, changeFrequency: 'monthly' },
+    { url: `${base}/privacy`, lastModified: now, priority: 0.3, changeFrequency: 'monthly' },
+    { url: `${base}/cookies`, lastModified: now, priority: 0.2, changeFrequency: 'monthly' },
   ];
 }
