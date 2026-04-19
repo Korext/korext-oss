@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { buildMetadata } from '@/lib/seo';
+import { JsonLd, softwareApplicationSchema } from '@/lib/schema';
 
 export const metadata = buildMetadata({
   title: 'Commit Carbon: AI Coding Emissions at Commit Level',
@@ -50,6 +51,15 @@ const features = [
 export default function CommitCarbonPage() {
   return (
     <div className="relative">
+      <JsonLd data={softwareApplicationSchema({
+        name: 'Commit Carbon',
+        description: 'The open standard for measuring AI assisted commit carbon emissions. CSRD, SEC, and CDP compatible.',
+        url: 'https://oss.korext.com/commit-carbon',
+        downloadUrl: 'https://www.npmjs.com/package/@korext/commit-carbon',
+        version: '1.0.3',
+        license: 'https://opensource.org/licenses/Apache-2.0',
+        applicationCategory: 'DeveloperApplication',
+      })} />
       {/* Hero Section */}
       <section className="pt-20 pb-16 md:pt-32 md:pb-24">
         <div className="container mx-auto px-4 sm:px-6 max-w-5xl text-center space-y-6 md:space-y-8">

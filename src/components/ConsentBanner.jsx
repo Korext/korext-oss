@@ -2,8 +2,10 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { hasConsented, setConsent } from '@/lib/consent';
-import ConsentPreferences from './ConsentPreferences';
+
+const ConsentPreferences = dynamic(() => import('./ConsentPreferences'), { ssr: false });
 
 export default function ConsentBanner() {
   const [visible, setVisible] = useState(false);

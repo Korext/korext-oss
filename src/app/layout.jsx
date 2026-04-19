@@ -49,6 +49,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <meta name="referrer" content="strict-origin-when-cross-origin" />
         <link rel="dns-prefetch" href="//api.github.com" />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { buildMetadata } from '@/lib/seo';
+import { JsonLd, softwareApplicationSchema } from '@/lib/schema';
 
 export const metadata = buildMetadata({
   title: 'AI Incident Registry',
@@ -22,6 +23,15 @@ const patternLinks = ['injection', 'authentication', 'authorization', 'cryptogra
 export default function IncidentsLanding() {
   return (
     <div className="min-h-screen">
+      <JsonLd data={softwareApplicationSchema({
+        name: 'AI Incident Registry',
+        description: 'The public registry and open standard for cataloging AI code failures.',
+        url: 'https://oss.korext.com/incidents',
+        downloadUrl: 'https://www.npmjs.com/package/@korext/incident-report',
+        version: '1.0.2',
+        license: 'https://opensource.org/licenses/Apache-2.0',
+        applicationCategory: 'DeveloperApplication',
+      })} />
       {/* Hero Section */}
       <section className="relative pt-24 sm:pt-32 pb-16 sm:pb-20 overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 relative z-10 text-center max-w-4xl">

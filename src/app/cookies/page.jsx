@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { JsonLd, techArticleSchema } from '@/lib/schema';
 
 export const metadata = {
   title: 'Cookie Policy | Korext Open Source',
@@ -22,6 +23,13 @@ function Section({ title, children }) {
 export default function CookiesPage() {
   return (
     <div className="min-h-screen py-24">
+      <JsonLd data={techArticleSchema({
+        headline: 'Cookie Policy',
+        description: 'Cookie policy for oss.korext.com. This site does not use cookies.',
+        datePublished: '2026-04-18',
+        dateModified: '2026-04-18',
+        url: 'https://oss.korext.com/cookies',
+      })} />
       <div className="container mx-auto px-6 max-w-[720px]">
         {/* Header */}
         <div className="mb-12">

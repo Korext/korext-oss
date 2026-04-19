@@ -1,19 +1,23 @@
 'use client';
 
-import { useEffect, useRef, useCallback } from 'react';
+import { useEffect, useRef, useCallback, useState } from 'react';
 
 const DOT_SPACING = 30;
 const DOT_RADIUS = 1.2;
 const GLOW_RADIUS = 220;
 const BASE_ALPHA = 0.08;
 const GLOW_COLOR = [130, 100, 255]; // indigo-violet
+const RESIZE_DEBOUNCE_MS = 150;
 
 export default function GlobalBackground() {
   const canvasRef = useRef(null);
   const mouseRef = useRef({ x: -9999, y: -9999 });
   const rafRef = useRef(null);
   const dotsRef = useRef([]);
+  const dirtyRef = useRef(true);
   const reducedMotionRef = useRef(false);
+  const resizeTimerRef = useRef(null);
+  const [enabled, setEnabled] = useState(false);
 
   const buildGrid = useCallback(() => {
     const canvas = canvasRef.current;
@@ -34,11 +38,24 @@ export default function GlobalBackground() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     buildGrid();
+    dirtyRef.current = true;
   }, [buildGrid]);
+
+  const debouncedResize = useCallback(() => {
+    if (resizeTimerRef.current) clearTimeout(resizeTimerRef.current);
+    resizeTimerRef.current = setTimeout(resize, RESIZE_DEBOUNCE_MS);
+  }, [resize]);
 
   const draw = useCallback(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
+
+    if (!dirtyRef.current) {
+      rafRef.current = requestAnimationFrame(draw);
+      return;
+    }
+
+    dirtyRef.current = false;
     const ctx = canvas.getContext('2d');
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -78,11 +95,18 @@ export default function GlobalBackground() {
   }, []);
 
   useEffect(() => {
-    if (typeof window !== 'undefined' && window.innerWidth < 768) return;
+    // Only enable on desktop screens (avoids SSR hydration mismatch)
+    if (window.innerWidth >= 768) {
+      setEnabled(true);
+    }
 
-    if (typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) {
+    if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) {
       reducedMotionRef.current = true;
     }
+  }, []);
+
+  useEffect(() => {
+    if (!enabled) return;
 
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -90,14 +114,15 @@ export default function GlobalBackground() {
     resize();
     rafRef.current = requestAnimationFrame(draw);
 
-    const onResize = () => resize();
-    window.addEventListener('resize', onResize, { passive: true });
+    window.addEventListener('resize', debouncedResize, { passive: true });
 
     const onMove = (e) => {
       mouseRef.current = { x: e.clientX, y: e.clientY };
+      dirtyRef.current = true;
     };
     const onLeave = () => {
       mouseRef.current = { x: -9999, y: -9999 };
+      dirtyRef.current = true;
     };
 
     window.addEventListener('mousemove', onMove, { passive: true });
@@ -105,13 +130,14 @@ export default function GlobalBackground() {
 
     return () => {
       cancelAnimationFrame(rafRef.current);
-      window.removeEventListener('resize', onResize);
+      clearTimeout(resizeTimerRef.current);
+      window.removeEventListener('resize', debouncedResize);
       window.removeEventListener('mousemove', onMove);
       document.removeEventListener('mouseleave', onLeave);
     };
-  }, [resize, draw]);
+  }, [enabled, resize, debouncedResize, draw]);
 
-  if (typeof window !== 'undefined' && window.innerWidth < 768) return null;
+  if (!enabled) return null;
 
   return (
     <canvas

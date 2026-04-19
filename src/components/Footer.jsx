@@ -3,7 +3,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
-import ConsentPreferences from './ConsentPreferences';
+import dynamic from 'next/dynamic';
+
+const ConsentPreferences = dynamic(() => import('./ConsentPreferences'), { ssr: false });
 
 const projects = [
   { href: '/ai-attestation', label: 'AI Attestation' },
@@ -137,18 +139,18 @@ export default function Footer() {
           </div>
 
           {/* Privacy row */}
-          <div className="pb-8 border-b border-white/[0.06] flex flex-wrap items-center gap-x-5 gap-y-2">
-            <Link href="/privacy" className="text-xs text-white/40 hover:text-white/60 transition-colors">
+          <div className="pb-8 border-b border-white/[0.06] flex flex-wrap items-center gap-x-5 gap-y-1">
+            <Link href="/privacy" className="text-xs text-white/40 hover:text-white/60 transition-colors py-2">
               Privacy Policy
             </Link>
             <span className="text-white/15">·</span>
-            <Link href="/cookies" className="text-xs text-white/40 hover:text-white/60 transition-colors">
+            <Link href="/cookies" className="text-xs text-white/40 hover:text-white/60 transition-colors py-2">
               Cookie Policy
             </Link>
             <span className="text-white/15">·</span>
             <button
               onClick={() => setShowPreferences(true)}
-              className="text-xs text-white/40 hover:text-white/60 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-500/60 focus-visible:rounded"
+              className="text-xs text-white/40 hover:text-white/60 transition-colors py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-500/60 focus-visible:rounded"
             >
               Privacy Preferences
             </button>

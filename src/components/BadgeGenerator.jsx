@@ -61,7 +61,7 @@ export default function BadgeGenerator() {
           <div className="space-y-2">
             <div className="flex items-center justify-between">
               <h4 className="text-xs font-semibold uppercase tracking-[0.15em] text-white/30">Markdown</h4>
-              <button onClick={handleCopyMd} className="text-xs text-violet-400 hover:text-violet-300 transition-colors font-medium">
+              <button onClick={handleCopyMd} className="text-xs text-violet-400 hover:text-violet-300 transition-colors font-medium py-2 px-3 -mr-3 rounded-lg">
                 {copiedMd ? '✓ Copied' : 'Copy'}
               </button>
             </div>
@@ -73,7 +73,7 @@ export default function BadgeGenerator() {
           <div className="space-y-2">
             <div className="flex items-center justify-between">
               <h4 className="text-xs font-semibold uppercase tracking-[0.15em] text-white/30">HTML</h4>
-              <button onClick={handleCopyHtml} className="text-xs text-violet-400 hover:text-violet-300 transition-colors font-medium">
+              <button onClick={handleCopyHtml} className="text-xs text-violet-400 hover:text-violet-300 transition-colors font-medium py-2 px-3 -mr-3 rounded-lg">
                 {copiedHtml ? '✓ Copied' : 'Copy'}
               </button>
             </div>

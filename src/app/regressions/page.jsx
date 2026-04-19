@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { buildMetadata } from '@/lib/seo';
+import { JsonLd, softwareApplicationSchema } from '@/lib/schema';
 
 export const metadata = buildMetadata({
   title: 'AI Regression Database',
@@ -23,6 +24,15 @@ const patternLinks = ['injection', 'authentication', 'authorization', 'cryptogra
 export default function RegressionsLanding() {
   return (
     <div className="min-h-screen">
+      <JsonLd data={softwareApplicationSchema({
+        name: 'AI Regression Database',
+        description: 'The public corpus of code patterns that AI coding tools consistently generate incorrectly.',
+        url: 'https://oss.korext.com/regressions',
+        downloadUrl: 'https://www.npmjs.com/package/@korext/regression-submit',
+        version: '1.0.6',
+        license: 'https://opensource.org/licenses/Apache-2.0',
+        applicationCategory: 'DeveloperApplication',
+      })} />
       {/* Hero Section */}
       <section className="relative pt-24 sm:pt-32 pb-16 sm:pb-20 overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 relative z-10 text-center max-w-4xl">
